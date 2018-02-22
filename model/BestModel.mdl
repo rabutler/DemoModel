@@ -1,5 +1,5 @@
 # RiverWare_Model 7.1.6 Patch
-# Created 12:16 February 22, 2018
+# Created 12:14 February 22, 2018
 # CADSWES, University of Colorado at Boulder, http://cadswes.colorado.edu/
 # 
 # The catalog command is parsed by the RiverSMART
@@ -14,8 +14,8 @@ Catalog {\
  <DmiMgr><datasetList></datasetList>\
   <dmiList></dmiList>\
  </DmiMgr>\
- <RplApplication><rplSetList><rplSetInfo rplSetType="Initialization Rules" rplSetName="Initialization Rules Set"></rplSetInfo>\
-   <rplSetInfo rplSetType="Expression Slots" rplSetName="Expression Slot Functions Set"></rplSetInfo>\
+ <RplApplication><rplSetList><rplSetInfo rplSetName="Initialization Rules Set" rplSetType="Initialization Rules"></rplSetInfo>\
+   <rplSetInfo rplSetName="Expression Slot Functions Set" rplSetType="Expression Slots"></rplSetInfo>\
   </rplSetList>\
  </RplApplication>\
 </Catalog>\
@@ -25,14 +25,14 @@ ModelAccountCount  0
 ModelSupplyCount   0
 ModelExchangeCount 0
 DST 0
-$ws.Model.FileInfo saveInfo 1 {RAButler} {02-22-2018 12:16:54} {RiverWare 7.1.6} 
+$ws.Model.FileInfo saveInfo 1 {RAButler} {02-22-2018 12:14:21} {RiverWare 7.1.6} 
 $ws.Model.FileInfo comment {}
 $ws.Model.RunHistoryParam MaxModelRunHistoryRecs 1
 $ws.Model.RunHistoryRecord 1 0 {RiverWare 7.1.6} {RAButler} \
  {Simulation} {02-22-2018 12:13:00} {02-22-2018 12:13:00} {Finished}
 $ws.AutoSave 1 0 0 15 {C:/Users/RAButler/AppData/Local/Temp/1/} none
 $ws.StringMgr 1 {\
-<stringMgr name="" size="256"/>\
+<stringMgr size="256" name=""/>\
 }
 SaveOutputs 1
 SaveExtPrecision 0
@@ -40,7 +40,6 @@ FlagEncoding 3
 BaselineModel 0
 ModelLockSet 0
 ObjectListWidth 256
-WsObjListOrderMode SORT_BY_NAME
 LockedIcons 0
 SelWindowIcon {RwIconStandard}
 WorkspaceSize 6450 6450
@@ -54,11 +53,6 @@ InitCanvasSpec SIMULATION {\
 <InitialViewSpec LocType="LocType_CenterAveObj" CanvId="SIMULATION">\
  <Zoom factor="1"/>\
  <CenterPos y="5989" x="831"/>\
-</InitialViewSpec>}
-InitCanvasSpec ACCOUNTING {\
-<InitialViewSpec LocType="LocType_CenterAveObj" CanvId="ACCOUNTING">\
- <Zoom factor="1"/>\
- <CenterPos y="0" x="0"/>\
 </InitialViewSpec>}
 InitCanvasSpec GEOSPATIAL {\
 <InitialViewSpec LocType="LocType_CenterAveObj" CanvId="GEOSPATIAL">\
@@ -165,208 +159,208 @@ $unitMgr end
 # Section: Unit Schemes
 "$ws.unitScheme" addUserScheme {<UnitScheme name="Scheme 1">\
  <Rule>\
-  <Key unitType="NONE" keyType="UnitTypeKey"/>\
-  <Attribs unitType="NONE" prec="2" units="NONE" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="NONE"/>\
+  <Attribs prec="2" format="f" units="NONE" unitType="NONE"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Length" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Length" prec="2" units="m" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Length"/>\
+  <Attribs prec="2" format="f" units="m" unitType="Length"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="SqrtLength" keyType="UnitTypeKey"/>\
-  <Attribs unitType="SqrtLength" prec="2" units="m1/2" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="SqrtLength"/>\
+  <Attribs prec="2" format="f" units="m1/2" unitType="SqrtLength"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Area" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Area" prec="2" units="m2" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Area"/>\
+  <Attribs prec="2" format="f" units="m2" unitType="Area"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Volume" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Volume" prec="2" units="m3" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Volume"/>\
+  <Attribs prec="2" format="f" units="m3" unitType="Volume"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Flow" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Flow" prec="2" units="cms" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Flow"/>\
+  <Attribs prec="2" format="f" units="cms" unitType="Flow"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="FlowSquared" keyType="UnitTypeKey"/>\
-  <Attribs unitType="FlowSquared" prec="2" units="cms2" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="FlowSquared"/>\
+  <Attribs prec="2" format="f" units="cms2" unitType="FlowSquared"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="FlowPerSqrtLength" keyType="UnitTypeKey"/>\
-  <Attribs unitType="FlowPerSqrtLength" prec="2" units="cms/m1/2" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="FlowPerSqrtLength"/>\
+  <Attribs prec="2" format="f" units="cms/m1/2" unitType="FlowPerSqrtLength"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="PerFlow" keyType="UnitTypeKey"/>\
-  <Attribs unitType="PerFlow" prec="2" units="1/cms" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="PerFlow"/>\
+  <Attribs prec="2" format="f" units="1/cms" unitType="PerFlow"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Power" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Power" prec="2" units="MW" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Power"/>\
+  <Attribs prec="2" format="f" units="MW" unitType="Power"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="PowerPerFlow" keyType="UnitTypeKey"/>\
-  <Attribs unitType="PowerPerFlow" prec="2" units="MW/cms" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="PowerPerFlow"/>\
+  <Attribs prec="2" format="f" units="MW/cms" unitType="PowerPerFlow"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Energy" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Energy" prec="2" units="MWH" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Energy"/>\
+  <Attribs prec="2" format="f" units="MWH" unitType="Energy"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Time" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Time" prec="2" units="hr" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Time"/>\
+  <Attribs prec="2" format="f" units="hr" unitType="Time"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="TimeSquared" keyType="UnitTypeKey"/>\
-  <Attribs unitType="TimeSquared" prec="2" units="hour2" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="TimeSquared"/>\
+  <Attribs prec="2" format="f" units="hour2" unitType="TimeSquared"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Mass" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Mass" prec="2" units="g" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Mass"/>\
+  <Attribs prec="2" format="f" units="g" unitType="Mass"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Heat" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Heat" prec="2" units="J" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Heat"/>\
+  <Attribs prec="2" format="f" units="J" unitType="Heat"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="EnergyFlux" keyType="UnitTypeKey"/>\
-  <Attribs unitType="EnergyFlux" prec="2" units="J/m2sec" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="EnergyFlux"/>\
+  <Attribs prec="2" format="f" units="J/m2sec" unitType="EnergyFlux"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="MassFlux" keyType="UnitTypeKey"/>\
-  <Attribs unitType="MassFlux" prec="2" units="g/m2sec" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="MassFlux"/>\
+  <Attribs prec="2" format="f" units="g/m2sec" unitType="MassFlux"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="VolFlux" keyType="UnitTypeKey"/>\
-  <Attribs unitType="VolFlux" prec="2" units="g/m3sec" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="VolFlux"/>\
+  <Attribs prec="2" format="f" units="g/m3sec" unitType="VolFlux"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Concentration" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Concentration" prec="2" units="g/m3" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Concentration"/>\
+  <Attribs prec="2" format="f" units="g/m3" unitType="Concentration"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="AreaPerTime" keyType="UnitTypeKey"/>\
-  <Attribs unitType="AreaPerTime" prec="2" units="m2/s" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="AreaPerTime"/>\
+  <Attribs prec="2" format="f" units="m2/s" unitType="AreaPerTime"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="PerTime" keyType="UnitTypeKey"/>\
-  <Attribs unitType="PerTime" prec="2" units="1/sec" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="PerTime"/>\
+  <Attribs prec="2" format="f" units="1/sec" unitType="PerTime"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Temperature" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Temperature" prec="2" units="C" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Temperature"/>\
+  <Attribs prec="2" format="f" units="C" unitType="Temperature"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="LengthPerTemperature_F" keyType="UnitTypeKey"/>\
-  <Attribs unitType="LengthPerTemperature_F" prec="2" units="m/F" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="LengthPerTemperature_F"/>\
+  <Attribs prec="2" format="f" units="m/F" unitType="LengthPerTemperature_F"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="TemperatureInFahren" keyType="UnitTypeKey"/>\
-  <Attribs unitType="TemperatureInFahren" prec="2" units="F" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="TemperatureInFahren"/>\
+  <Attribs prec="2" format="f" units="F" unitType="TemperatureInFahren"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="SpecificHeat" keyType="UnitTypeKey"/>\
-  <Attribs unitType="SpecificHeat" prec="2" units="J/gC" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="SpecificHeat"/>\
+  <Attribs prec="2" format="f" units="J/gC" unitType="SpecificHeat"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Velocity" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Velocity" prec="2" units="m/s" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Velocity"/>\
+  <Attribs prec="2" format="f" units="m/s" unitType="Velocity"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="VelocityPerTemperature_F" keyType="UnitTypeKey"/>\
-  <Attribs unitType="VelocityPerTemperature_F" prec="2" units="m/s-F" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="VelocityPerTemperature_F"/>\
+  <Attribs prec="2" format="f" units="m/s-F" unitType="VelocityPerTemperature_F"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Density" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Density" prec="2" units="kg/m3_dens" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Density"/>\
+  <Attribs prec="2" format="f" units="kg/m3_dens" unitType="Density"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="PowerCost" keyType="UnitTypeKey"/>\
-  <Attribs unitType="PowerCost" prec="2" units="$/MWh" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="PowerCost"/>\
+  <Attribs prec="2" format="f" units="$/MWh" unitType="PowerCost"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Value" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Value" prec="2" units="$" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Value"/>\
+  <Attribs prec="2" format="f" units="$" unitType="Value"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="ValuePerFlow" keyType="UnitTypeKey"/>\
-  <Attribs unitType="ValuePerFlow" prec="2" units="$/cms" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="ValuePerFlow"/>\
+  <Attribs prec="2" format="f" units="$/cms" unitType="ValuePerFlow"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="ValuePerVolume" keyType="UnitTypeKey"/>\
-  <Attribs unitType="ValuePerVolume" prec="2" units="$/m3" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="ValuePerVolume"/>\
+  <Attribs prec="2" format="f" units="$/m3" unitType="ValuePerVolume"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="LengthPerVolume" keyType="UnitTypeKey"/>\
-  <Attribs unitType="LengthPerVolume" prec="2" units="m/m3" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="LengthPerVolume"/>\
+  <Attribs prec="2" format="f" units="m/m3" unitType="LengthPerVolume"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="LengthPerFlow" keyType="UnitTypeKey"/>\
-  <Attribs unitType="LengthPerFlow" prec="2" units="m/cms" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="LengthPerFlow"/>\
+  <Attribs prec="2" format="f" units="m/cms" unitType="LengthPerFlow"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="PerLength" keyType="UnitTypeKey"/>\
-  <Attribs unitType="PerLength" prec="2" units="1/m" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="PerLength"/>\
+  <Attribs prec="2" format="f" units="1/m" unitType="PerLength"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="PerLengthTime" keyType="UnitTypeKey"/>\
-  <Attribs unitType="PerLengthTime" prec="2" units="1/m-s" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="PerLengthTime"/>\
+  <Attribs prec="2" format="f" units="1/m-s" unitType="PerLengthTime"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="FlowPerLength" keyType="UnitTypeKey"/>\
-  <Attribs unitType="FlowPerLength" prec="2" units="cms/m" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="FlowPerLength"/>\
+  <Attribs prec="2" format="f" units="cms/m" unitType="FlowPerLength"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="VolumePerFlow" keyType="UnitTypeKey"/>\
-  <Attribs unitType="VolumePerFlow" prec="2" units="m3/cms" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="VolumePerFlow"/>\
+  <Attribs prec="2" format="f" units="m3/cms" unitType="VolumePerFlow"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="energyPerLength" keyType="UnitTypeKey"/>\
-  <Attribs unitType="energyPerLength" prec="2" units="MWH/m" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="energyPerLength"/>\
+  <Attribs prec="2" format="f" units="MWH/m" unitType="energyPerLength"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="powerPerLength" keyType="UnitTypeKey"/>\
-  <Attribs unitType="powerPerLength" prec="2" units="MW/m" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="powerPerLength"/>\
+  <Attribs prec="2" format="f" units="MW/m" unitType="powerPerLength"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="Fraction" keyType="UnitTypeKey"/>\
-  <Attribs unitType="Fraction" prec="2" units="decimal" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="Fraction"/>\
+  <Attribs prec="2" format="f" units="decimal" unitType="Fraction"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="FractionPerFlow" keyType="UnitTypeKey"/>\
-  <Attribs unitType="FractionPerFlow" prec="2" units="decimal/cms" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="FractionPerFlow"/>\
+  <Attribs prec="2" format="f" units="decimal/cms" unitType="FractionPerFlow"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="FractionPerLength" keyType="UnitTypeKey"/>\
-  <Attribs unitType="FractionPerLength" prec="2" units="decimal/m" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="FractionPerLength"/>\
+  <Attribs prec="2" format="f" units="decimal/m" unitType="FractionPerLength"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="noDimension" keyType="UnitTypeKey"/>\
-  <Attribs unitType="noDimension" prec="2" units="m/m" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="noDimension"/>\
+  <Attribs prec="2" format="f" units="m/m" unitType="noDimension"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="VolumeSquared" keyType="UnitTypeKey"/>\
-  <Attribs unitType="VolumeSquared" prec="2" units="m6" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="VolumeSquared"/>\
+  <Attribs prec="2" format="f" units="m6" unitType="VolumeSquared"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="TimePerLength" keyType="UnitTypeKey"/>\
-  <Attribs unitType="TimePerLength" prec="2" units="s/m" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="TimePerLength"/>\
+  <Attribs prec="2" format="f" units="s/m" unitType="TimePerLength"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="FlowVolume" keyType="UnitTypeKey"/>\
-  <Attribs unitType="FlowVolume" prec="2" units="m6/t" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="FlowVolume"/>\
+  <Attribs prec="2" format="f" units="m6/t" unitType="FlowVolume"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="FlowTime" keyType="UnitTypeKey"/>\
-  <Attribs unitType="FlowTime" prec="2" units="cmshour" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="FlowTime"/>\
+  <Attribs prec="2" format="f" units="cmshour" unitType="FlowTime"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="FlowPerTime" keyType="UnitTypeKey"/>\
-  <Attribs unitType="FlowPerTime" prec="2" units="cmss" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="FlowPerTime"/>\
+  <Attribs prec="2" format="f" units="cmss" unitType="FlowPerTime"/>\
  </Rule>\
  <Rule>\
-  <Key unitType="String" keyType="UnitTypeKey"/>\
-  <Attribs unitType="String" prec="2" units="Text" format="f"/>\
+  <Key keyType="UnitTypeKey" unitType="String"/>\
+  <Attribs prec="2" format="f" units="Text" unitType="String"/>\
  </Rule>\
 </UnitScheme>\
 }
@@ -460,7 +454,7 @@ set s "$o.Inflow"
 "$s" cvg 2 0.0001
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
-"$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 1 @ 8 2 @ 4 
+"$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 1 @ 11 2 
 "$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 75 @ 11 NaN 
 "$o" {SeriesSlot} {Outflow}
 set s "$o.Outflow"
@@ -543,7 +537,6 @@ $ws SimRunAnalysisData +begin+
 set o "$ws.Reach1"
 $o callSetupDispatch
 $o dispatchedEntryDict {02-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1  0 solveNROutflow @ 11 {} END
-$o dispatchedEntryDict {02-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1  1 {} @ 12 END
 $o solvedFlags {02-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 1 @ 11 0 END
 $o solvedWQFlags {02-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 0 @ 12 END
 $ws RunAnalysisData  +end+
@@ -608,110 +601,13 @@ BEGIN\
 \
 END\
 }
-# Section: RPL Display Settings
-Section {RPL Display Settings}
-"$ws.RplDisplaySettings" {<RplDisplaySettings>\
-  <UserFont>MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0</UserFont>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_STATEMENT" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_EXPRESSION" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_STRING" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ASSIGNMENT" priority="2" before="1" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_FUNCTION_NAME" symb="VisTokSym_STRING" priority="7" before="0" after="1" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_SEPARATOR" priority="1" before="0" after="1" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_IF" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_THEN" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ELSE" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ELSEIF" priority="0" before="1" after="0" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDIF" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_PLUS" priority="3" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_MINUS" priority="3" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_TIMES" priority="3" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_MODULO" priority="5" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_INT_DIVISION" priority="5" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_POWER" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LOGICAL_OR" priority="4" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LOGICAL_AND" priority="4" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LOGICAL_IN" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LESS_THAN" priority="6" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_GREATER_THAN" priority="6" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LESS_THAN_OR_EQUAL" priority="6" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_GREATER_THAN_OR_EQUAL" priority="6" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_CONCAT" priority="8" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_TO" priority="8" before="1" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LOGICAL_NOT" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LENGTH" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_STRINGIFY" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_IS_NAN" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_NAN_TO_ZERO" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_JOIN_OBJ_SLOT" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_JOIN_OBJ_ACCT_SLOT" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_OBJ_SLOT_LOOKUP" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_FOR" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_IN" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_WITH" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_EQUAL" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_WHILE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_MAPLIST" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_DO" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDFOR" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDWHILE" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDWITH" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDMAPLIST" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDFOREACH" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_INSERT" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_INTO" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_APPEND" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ONTO" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_FIND" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_WITHIN" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_REMOVE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ITEM" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_SUBSTITUTE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_FORITEM" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_OF" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_INDEX" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_FROM" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_PRINT" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_EXEC_SCRIPT" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ADD_SCONSTRAINT" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ADD_HCONSTRAINT" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_MINIMIZE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_MAXIMIZE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_FREEZE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_SUMMATION" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_RMAXIMIN" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_SMAXIMIN" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_REWARD_TABLE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDSUMMATION" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDMAXIMIN" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_REWARD_TABLE_END" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_COMMENT" priority="0" before="1" after="1" indentBef="0" indentAft="0"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_STAT_SUM" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_STAT_AVE" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_STOP_RUN" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_WARNING" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
-  <TextColor type="RplColor_DEFAULT_FG" colorARGB="#ff000000"/>\
-  <TextColor type="RplColor_SEL_DEFAULT_FG" colorARGB="#ff000000"/>\
-  <TextColor type="RplColor_TYPES_NAMES_VALS" colorARGB="#ff2600ff"/>\
-  <TextColor type="RplColor_SEL_TYPES_NAMES_VALS" colorARGB="#ff000000"/>\
-  <TextColor type="RplColor_PREDEF_FUNCTIONS" colorARGB="#ff0ab400"/>\
-  <TextColor type="RplColor_COMMENTS" colorARGB="#ffd12e31"/>\
-  <TextColor type="RplColor_DIS_FUNCTIONS" colorARGB="#ff9f1535"/>\
-  <TextColor type="RplColor_THE_BG" colorARGB="#ffffffff"/>\
-  <TextColor type="RplColor_SELECTION_BG" colorARGB="#ffffffb4"/>\
-  <TextColor type="RplColor_DIS_OBJS_XHATCH" colorARGB="#ffc0c0c0"/>\
-  <TextColor type="RplColor_FUNCTIONS" colorARGB="#ff844800"/>\
-  <TextColor type="RplColor_EXPRESSIONS" colorARGB="#ff430067"/>\
-  <TextColor type="RplColor_EXPRESSIONS_BG" colorARGB="#fff5f5f5"/>\
-  <ShowElemNumbers value="false" />\
-</RplDisplaySettings>}
 # Section: Script Manager
 Section {Script Manager}
 # Show Script Manager On Model Load
 $ws.rwScriptMgr rwShowScriptMgrOnModelLoad {\
 <ShowScriptMgrOnModelLoad>\
    <YesOrNo>false</YesOrNo>\
-   <DefaultScriptGroup>All Scripts</DefaultScriptGroup>\
+   <DefaultScriptGroup></DefaultScriptGroup>\
 </ShowScriptMgrOnModelLoad>\
 }
 # Section: Object Attribute Manager
