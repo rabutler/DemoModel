@@ -1,5 +1,5 @@
 # RiverWare_Model 7.1.6 Patch
-# Created 15:36 February 22, 2018
+# Created 15:41 February 22, 2018
 # CADSWES, University of Colorado at Boulder, http://cadswes.colorado.edu/
 # 
 # The catalog command is parsed by the RiverSMART
@@ -25,7 +25,7 @@ ModelAccountCount  0
 ModelSupplyCount   0
 ModelExchangeCount 0
 DST 0
-$ws.Model.FileInfo saveInfo 1 {RAButler} {02-22-2018 15:36:39} {RiverWare 7.1.6} 
+$ws.Model.FileInfo saveInfo 1 {RAButler} {02-22-2018 15:41:13} {RiverWare 7.1.6} 
 $ws.Model.FileInfo comment {}
 $ws.Model.RunHistoryParam MaxModelRunHistoryRecs 1
 $ws.Model.RunHistoryRecord 1 0 {RiverWare 7.1.6} {RAButler} \
@@ -461,7 +461,7 @@ set s "$o.Inflow"
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
 "$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 1 @ 12 
-"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 75 @ 11 66 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 72.6 @ 12 
 "$o" {SeriesSlot} {Outflow}
 set s "$o.Outflow"
 "$s" order 2 
@@ -469,7 +469,7 @@ set s "$o.Outflow"
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
 "$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
-"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 75 @ 11 66 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 72.6 @ 12 
 "$o" hideSlots 0 hideOff hideEmptyOff
 set obj {Reach2}
 set o "$ws.Reach2"
@@ -527,7 +527,7 @@ set s "$o.Inflow"
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
 "$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
-"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 75 @ 11 66 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 72.6 @ 12 
 "$o" {SeriesSlot} {Outflow}
 set s "$o.Outflow"
 "$s" order 2 
@@ -535,7 +535,7 @@ set s "$o.Outflow"
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
 "$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
-"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 75 @ 11 66 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 72.6 @ 12 
 "$o" hideSlots 0 hideOff hideEmptyOff
 set obj {Bifurcation1}
 set o "$ws.Bifurcation1"
@@ -556,7 +556,7 @@ set s "$o.Inflow"
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
 "$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
-"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 75 @ 11 66 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 72.6 @ 12 
 "$o" {SeriesSlot} {Outflow1}
 set s "$o.Outflow1"
 "$s" order 2 
@@ -590,7 +590,7 @@ set s "$o.Split Outflows"
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
 "$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
-"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 75 @ 11 66 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 72.6 @ 12 
 "$o" hideSlots 0 hideOff hideEmptyOff
 set obj {Reach3}
 set o "$ws.Reach3"
@@ -648,7 +648,7 @@ set s "$o.Inflow"
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
 "$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
-"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 30 @ 11 26.4 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 29.04 @ 12 
 "$o" {SeriesSlot} {Outflow}
 set s "$o.Outflow"
 "$s" order 2 
@@ -656,7 +656,7 @@ set s "$o.Outflow"
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
 "$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
-"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 30 @ 11 26.4 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 29.04 @ 12 
 "$o" hideSlots 0 hideOff hideEmptyOff
 set obj {Reach4}
 set o "$ws.Reach4"
@@ -714,7 +714,7 @@ set s "$o.Inflow"
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
 "$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
-"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 45 @ 11 39.6 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 43.56 @ 12 
 "$o" {SeriesSlot} {Outflow}
 set s "$o.Outflow"
 "$s" order 2 
@@ -722,7 +722,7 @@ set s "$o.Outflow"
 "$s" unit 8 {%f} 2
 "$s" minMax NaN NaN
 "$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
-"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 45 @ 11 39.6 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 43.56 @ 12 
 "$o" hideSlots 0 hideOff hideEmptyOff
 # Section: Objects/Snapshots
 # Section: Object Relationships
@@ -992,6 +992,213 @@ Section {RPL Display Settings}
 </RplDisplaySettings>}
 # Section: Script Manager
 Section {Script Manager}
+# Script: Script 1
+$ws.rwScriptMgr rwScript {\
+<rwScript>\
+  <Name>Script 1</Name>\
+  <Description>Update Reach 1 Inflow</Description>\
+  <EditActionPanelHeight>132</EditActionPanelHeight>\
+  <Action>\
+    <ActionType>SetSeriesSlotValues</ActionType>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>rwScriptActionEnabled</Value></Property>\
+      <Property><Name>Value</Name><Value>Yes</Value></Property>\
+      <Property><Name>Type</Name><Value>Boolean</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value>True</Value></Property>\
+      <Property><Name>TrueString</Name><Value>Yes</Value></Property>\
+      <Property><Name>FalseString</Name><Value>No</Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>rwScriptShowInMgr</Value></Property>\
+      <Property><Name>Value</Name><Value>Yes</Value></Property>\
+      <Property><Name>Type</Name><Value>Boolean</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value>True</Value></Property>\
+      <Property><Name>TrueString</Name><Value>Yes</Value></Property>\
+      <Property><Name>FalseString</Name><Value>No</Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>rwScriptDisplayText</Value></Property>\
+      <Property><Name>Value</Name><Value></Value></Property>\
+      <Property><Name>Type</Name><Value>SingleLineText</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value></Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>SetSeriesSlotValuesSlotSel</Value></Property>\
+      <Property>\
+        <Name>Value</Name>\
+        <Value>RootSelection Version1 \\
+RootSel_Name       "Set Series Slot Values Action: Slot Selection" \\
+RootSel_UserLabel  "" \\
+RootSel_UseUserLabel        false \\
+RootSel_RootType   ROOT_SUBCLASS_SLOT \\
+RoolSel_AllowSlots_Physical RoolSel_AllowSlots_Account RoolSel_AllowSlots_Supply RoolSel_AllowSlots_Exchange RoolSel_AllowSlots_ExchangeSply RoolSel_AllowSlots_Payback RoolSel_AllowSlots_PaybackSply  \\
+RootSel_SelMode    SELMODE_SLOT_PHYSICAL \\
+RootSel_SubBasin_WildAllowed    true \\
+RootSel_SubBasin_Wildcarded     false \\
+RootFilter FILTER_SIMOBJ_NAME_WILDCARD ROOT_SUBCLASS_SIMOBJ \\
+RootFilter FILTER_SIMOBJ_HAS_ACCOUNT ROOT_SUBCLASS_SIMOBJ \\
+RootFilter FILTER_SIMOBJ_IN_SUBBASIN ROOT_SUBCLASS_SIMOBJ \\
+RootFilter FILTER_SIMOBJ_IN_CLUSTER ROOT_SUBCLASS_SIMOBJ \\
+RootFilter FILTER_SIMOBJ_HAS_ATTRIB_VALUE ROOT_SUBCLASS_SIMOBJ \\
+RootSel_SimObj_WildAllowed      true \\
+RootSel_SimObj_Wildcarded       false \\
+RootSel_SimObj_ExclAggObjElems  false \\
+RootFilter FILTER_EXCHANGE_NAME_WILDCARD ROOT_SUBCLASS_EXCHANGE \\
+RootSel_Exch_WildAllowed        true \\
+RootSel_Exch_Wildcarded         false \\
+RootFilter FILTER_ACCOUNT_NAME_WILDCARD ROOT_SUBCLASS_ACCOUNT \\
+RootFilter FILTER_ACCOUNT_WATER_TYPE ROOT_SUBCLASS_ACCOUNT \\
+RootFilter FILTER_ACCOUNT_WATER_OWNER ROOT_SUBCLASS_ACCOUNT \\
+RootFilter FILTER_ACCOUNT_JUNIOR_TO_DATE ROOT_SUBCLASS_ACCOUNT \\
+RootFilter FILTER_ACCOUNT_SENIOR_TO_DATE ROOT_SUBCLASS_ACCOUNT \\
+RootSel_Acct_WildAllowed        true \\
+RootSel_Acct_Wildcarded         false \\
+RootSel_InclStorageAccts        true \\
+RootSel_InclDiversionAccts      true \\
+RootSel_InclInstreamFlowAccts   true \\
+RootSel_InclPassThroughAccts    true \\
+RootFilter FILTER_PAYBACK_NAME_WILDCARD ROOT_SUBCLASS_PAYBACK \\
+RootSel_Pback_WildAllowed       true \\
+RootSel_Pback_Wildcarded        false \\
+RootFilter FILTER_SUPPLY_NAME_WILDCARD ROOT_SUBCLASS_SUPPLY \\
+RootFilter FILTER_SUPPLY_RELEASE_TYPE ROOT_SUBCLASS_ACCOUNT \\
+RootFilter FILTER_SUPPLY_DESTINATION ROOT_SUBCLASS_ACCOUNT \\
+RootFilter FILTER_SUPPLY_ROLE ROOT_SUBCLASS_ACCOUNT \\
+RootFilter FILTER_SUPPLY_ALLOWS_FLAG ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SUPPLY_HAS_DESCRIPT ROOT_SUBCLASS_SLOT \\
+RootSel_Supply_WildAllowed      true \\
+RootSel_Supply_Wildcarded       false \\
+RootSel_Supply_ShowFromAccts    true \\
+RootSel_Supply_ShowToAccts      false \\
+RootSel_ShowSupplies_InOut      true \\
+RootSel_ShowSupplies_DivRet     true \\
+RootSel_ShowSupplies_Trans      true \\
+RootFilter FILTER_SLOT_NAME_WILDCARD ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SLOT_COL_LABEL_WILDCARD ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SLOT_UNIT_TYPE ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SLOT_TYPE ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SLOT_HAS_RPL_EXPR ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SLOT_TIMESTEP ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SLOT_ALLOWS_FLAG ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SLOT_ATTRIB ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SLOT_HAS_DESCRIPT ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SLOT_USES_OPT_LIMITS ROOT_SUBCLASS_SLOT \\
+RootFilter FILTER_SLOT_IS_CUSTOM ROOT_SUBCLASS_SLOT \\
+RootSel_Slot_WildAllowed        true \\
+RootSel_Slot_Wildcarded         false \\
+RootSel_SlotTypeBits_InclMask   0 \\
+RootSel_SlotTypeBits_ExclMask   0 \\
+RootSel_AllowAggSeriesCols      false \\
+RootSel_AllowTableSeriesCols    false \\
+RootSel_AllowAggTableCols       false \\
+RootSel_ShowAggSeriesCols       false \\
+RootSel_ShowTableSeriesCols     false \\
+RootSel_ShowAggTableCols        false \\
+RootSel_RequiresSlotColRefs     false \\
+RootSel_SimObjClass "Reach" \\
+RootSel_SimObj "Reach1" \\
+RootSel_Slot "Reach1.Inflow" \\
+RootSel_End \\
+</Value>\
+      </Property>\
+      <Property><Name>Type</Name><Value>Selection</Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>SetSeriesSlotValuesColumn</Value></Property>\
+      <Property><Name>Value</Name><Value></Value></Property>\
+      <Property><Name>Type</Name><Value>SingleLineText</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value></Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>SetSeriesSlotValuesSlotValue</Value></Property>\
+      <Property><Name>Value</Name><Value>NaN</Value></Property>\
+      <Property><Name>Type</Name><Value>SlotValue</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value>NaN</Value></Property>\
+      <Property><Name>SlotNameSettingId</Name><Value>SetSeriesSlotValuesSlotSel</Value></Property>\
+      <Property><Name>SlotColSettingId</Name><Value></Value></Property>\
+      <Property><Name>UnitTypeSettingId</Name><Value></Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>SetSeriesSlotValuesStartDate</Value></Property>\
+      <Property><Name>Value</Name><Value>RunStartDate()</Value></Property>\
+      <Property><Name>Type</Name><Value>RplDateTime</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value></Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>SetSeriesSlotValuesEndDate</Value></Property>\
+      <Property><Name>Value</Name><Value>RunEndDate()</Value></Property>\
+      <Property><Name>Type</Name><Value>RplDateTime</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value></Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>SetSeriesSlotValuesEditOption</Value></Property>\
+      <Property><Name>Value</Name><Value>Yes: Slider</Value></Property>\
+      <Property><Name>Type</Name><Value>Enumeration</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value>No</Value></Property>\
+      <Property><Name>Option</Name><Value>No</Value></Property>\
+      <Property><Name>Option</Name><Value>Yes: Editor</Value></Property>\
+      <Property><Name>Option</Name><Value>Yes: Radio Buttons</Value></Property>\
+      <Property><Name>Option</Name><Value>Yes: Slider</Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>SetSeriesSlotValuesMinEditValue</Value></Property>\
+      <Property><Name>Value</Name><Value>70.000000000000</Value></Property>\
+      <Property><Name>Type</Name><Value>SlotValue</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value>NaN</Value></Property>\
+      <Property><Name>SlotNameSettingId</Name><Value>SetSeriesSlotValuesSlotSel</Value></Property>\
+      <Property><Name>SlotColSettingId</Name><Value></Value></Property>\
+      <Property><Name>UnitTypeSettingId</Name><Value></Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>SetSeriesSlotValuesMaxEditValue</Value></Property>\
+      <Property><Name>Value</Name><Value>90.000000000000</Value></Property>\
+      <Property><Name>Type</Name><Value>SlotValue</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value>NaN</Value></Property>\
+      <Property><Name>SlotNameSettingId</Name><Value>SetSeriesSlotValuesSlotSel</Value></Property>\
+      <Property><Name>SlotColSettingId</Name><Value></Value></Property>\
+      <Property><Name>UnitTypeSettingId</Name><Value></Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>SetSeriesSlotValueEncodeSlotName</Value></Property>\
+      <Property><Name>Value</Name><Value></Value></Property>\
+      <Property><Name>Type</Name><Value>SlotName</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value></Value></Property>\
+    </Setting>\
+  </Action>\
+  <Action>\
+    <ActionType>ExecuteRun</ActionType>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>rwScriptActionEnabled</Value></Property>\
+      <Property><Name>Value</Name><Value>Yes</Value></Property>\
+      <Property><Name>Type</Name><Value>Boolean</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value>True</Value></Property>\
+      <Property><Name>TrueString</Name><Value>Yes</Value></Property>\
+      <Property><Name>FalseString</Name><Value>No</Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>rwScriptShowInMgr</Value></Property>\
+      <Property><Name>Value</Name><Value>Yes</Value></Property>\
+      <Property><Name>Type</Name><Value>Boolean</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value>True</Value></Property>\
+      <Property><Name>TrueString</Name><Value>Yes</Value></Property>\
+      <Property><Name>FalseString</Name><Value>No</Value></Property>\
+    </Setting>\
+    <Setting>\
+      <Property><Name>Identifier</Name><Value>rwScriptDisplayText</Value></Property>\
+      <Property><Name>Value</Name><Value></Value></Property>\
+      <Property><Name>Type</Name><Value>SingleLineText</Value></Property>\
+      <Property><Name>DefaultValue</Name><Value></Value></Property>\
+    </Setting>\
+  </Action>\
+</rwScript>\
+}
+# ScriptGroup: All Scripts
+$ws.rwScriptMgr rwScriptGroup {\
+<rwScriptGroup>\
+   <ScriptGroupName>All Scripts</ScriptGroupName>\
+   <GroupScript>Script 1</GroupScript>\
+</rwScriptGroup>\
+}
 # Show Script Manager On Model Load
 $ws.rwScriptMgr rwShowScriptMgrOnModelLoad {\
 <ShowScriptMgrOnModelLoad>\
