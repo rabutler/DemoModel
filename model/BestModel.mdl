@@ -1,0 +1,723 @@
+# RiverWare_Model 7.1.6 Patch
+# Created 12:53 February 22, 2018
+# CADSWES, University of Colorado at Boulder, http://cadswes.colorado.edu/
+# 
+# The catalog command is parsed by the RiverSMART
+# RiverWare model plugin:
+#  - It must appear in the first 100 lines of the file.
+#  - Lines up to and including it must not exceed 4K bytes.
+#  - Its name must not change.
+Catalog {\
+<Catalog>\
+ <MRMControl><mrmCfgList></mrmCfgList>\
+ </MRMControl>\
+ <DmiMgr><datasetList></datasetList>\
+  <dmiList></dmiList>\
+ </DmiMgr>\
+ <RplApplication><rplSetList><rplSetInfo rplSetType="Initialization Rules" rplSetName="Initialization Rules Set"></rplSetInfo>\
+   <rplSetInfo rplSetType="Expression Slots" rplSetName="Expression Slot Functions Set"></rplSetInfo>\
+  </rplSetList>\
+ </RplApplication>\
+</Catalog>\
+} # End Catalog
+ModelSimObjCount   1
+ModelAccountCount  0
+ModelSupplyCount   0
+ModelExchangeCount 0
+DST 0
+$ws.Model.FileInfo saveInfo 1 {RAButler} {02-22-2018 12:53:15} {RiverWare 7.1.6} 
+$ws.Model.FileInfo comment {}
+$ws.Model.RunHistoryParam MaxModelRunHistoryRecs 1
+$ws.Model.RunHistoryRecord 1 0 {RiverWare 7.1.6} {RAButler} \
+ {Simulation} {02-22-2018 12:13:00} {02-22-2018 12:13:00} {Finished}
+$ws.AutoSave 1 0 0 15 {C:/Users/RAButler/AppData/Local/Temp/1/} none
+$ws.StringMgr 1 {\
+<stringMgr size="256" name=""/>\
+}
+SaveOutputs 1
+SaveExtPrecision 0
+FlagEncoding 3
+BaselineModel 0
+ModelLockSet 0
+ObjectListWidth 256
+WsObjListOrderMode SORT_BY_NAME
+LockedIcons 0
+SelWindowIcon {RwIconStandard}
+WorkspaceSize 6450 6450
+AccountingSize 6450 6450
+GeospatialSize 6450 6450
+DisplayProperties 0
+EpochBeginYear 1800
+OverrideDefaultPlotAxesForVertDist 0
+CurrCanvasType SIMULATION
+InitCanvasSpec SIMULATION {\
+<InitialViewSpec LocType="LocType_CenterAveObj" CanvId="SIMULATION">\
+ <Zoom factor="1"/>\
+ <CenterPos x="831" y="5989"/>\
+</InitialViewSpec>}
+InitCanvasSpec ACCOUNTING {\
+<InitialViewSpec LocType="LocType_CenterAveObj" CanvId="ACCOUNTING">\
+ <Zoom factor="1"/>\
+ <CenterPos x="0" y="0"/>\
+</InitialViewSpec>}
+InitCanvasSpec GEOSPATIAL {\
+<InitialViewSpec LocType="LocType_CenterAveObj" CanvId="GEOSPATIAL">\
+ <Zoom factor="1"/>\
+ <CenterPos x="0" y="0"/>\
+</InitialViewSpec>}
+WaterYearStartMonthIndex 9 YearNamedFromEnd
+SlotGroupsEnabled 1
+SlotDlgPrefs {\
+<SlotDlgPrefs>\
+ <ShowSelStatus show="1"/>\
+ <ShowNotes show="P"/>\
+ <ShowDesc_General show="P"/>\
+</SlotDlgPrefs>}
+$ws.runInfo pauseAtDate {03-01-2018 00:00:00}
+$ws.runInfo pauseAtPriority 2
+$ws.runInfo setDescription {Model Run}
+$ws.runInfo runParam {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH 
+$ws.runInfo setType 0
+$ws.runInfo setResumedRun 0 {02-01-2018 00:00:00}
+$ws.runInfo typeOfMostRecentRun 0
+$ws.runInfo setActiveCategories 1 0
+$ws.runInfo setInlineCategories 1 0
+$ws.runInfo setMaxSimIterations 40
+$ws.runInfo setMaxAcctIterations 20
+$ws.runInfo setSeriesExtensionIncrement 1
+$ws.runInfo setWarnOutOfBounds 0
+$ws.multiRunInfo setDescription {Model Run}
+$ws.multiRunInfo runParam {02-22-2018 12:00:00} {02-23-2018 12:00:00} 6 HOUR 
+$ws.multiRunInfo setType 3
+$ws.multiRunInfo setResumedRun 0 {02-22-2018 18:00:00}
+$ws.multiRunInfo setActiveCategories 1 0
+$ws.multiRunInfo setInlineCategories 1 0
+$ws.multiRunInfo setMaxSimIterations 40
+$ws.multiRunInfo setMaxAcctIterations 20
+$ws.multiRunInfo setSeriesExtensionIncrement 1
+$ws.multiRunInfo setWarnOutOfBounds 0
+# Section: Unit Manager
+Section {Unit Manager}
+set unitMgr "$ws.UnitMgr"
+$unitMgr initScaledUnits 61
+$unitMgr scaledUnit 0 {NONE} 1 {NONE}
+$unitMgr scaledUnit 1 {Length} 1 {m}
+$unitMgr scaledUnit 2 {Length} 1 {ft}
+$unitMgr scaledUnit 3 {SqrtLength} 1 {m1/2}
+$unitMgr scaledUnit 4 {Area} 1 {m2}
+$unitMgr scaledUnit 5 {Area} 1 {acre}
+$unitMgr scaledUnit 6 {Volume} 1 {m3}
+$unitMgr scaledUnit 7 {Volume} 1 {acre-ft}
+$unitMgr scaledUnit 8 {Flow} 1 {cms}
+$unitMgr scaledUnit 9 {Flow} 1 {cfs}
+$unitMgr scaledUnit 10 {Flow} 1 {acre-ft/day}
+$unitMgr scaledUnit 11 {FlowSquared} 1 {cms2}
+$unitMgr scaledUnit 12 {FlowPerSqrtLength} 1 {cms/m1/2}
+$unitMgr scaledUnit 13 {PerFlow} 1 {1/cms}
+$unitMgr scaledUnit 14 {Power} 1 {MW}
+$unitMgr scaledUnit 15 {PowerPerFlow} 1 {MW/cms}
+$unitMgr scaledUnit 16 {Energy} 1 {MWH}
+$unitMgr scaledUnit 17 {Time} 1 {hr}
+$unitMgr scaledUnit 18 {Time} 1 {day}
+$unitMgr scaledUnit 19 {TimeSquared} 1 {hour2}
+$unitMgr scaledUnit 20 {Mass} 1 {g}
+$unitMgr scaledUnit 21 {Mass} 1 {tons}
+$unitMgr scaledUnit 22 {Heat} 1 {J}
+$unitMgr scaledUnit 23 {EnergyFlux} 1 {J/m2sec}
+$unitMgr scaledUnit 24 {MassFlux} 1 {g/m2sec}
+$unitMgr scaledUnit 25 {VolFlux} 1 {g/m3sec}
+$unitMgr scaledUnit 26 {Concentration} 1 {g/m3}
+$unitMgr scaledUnit 27 {Concentration} 1 {lb/ft3}
+$unitMgr scaledUnit 28 {AreaPerTime} 1 {m2/s}
+$unitMgr scaledUnit 29 {PerTime} 1 {1/sec}
+$unitMgr scaledUnit 30 {Temperature} 1 {C}
+$unitMgr scaledUnit 31 {LengthPerTemperature_F} 1 {m/F}
+$unitMgr scaledUnit 32 {TemperatureInFahren} 1 {F}
+$unitMgr scaledUnit 33 {SpecificHeat} 1 {J/gC}
+$unitMgr scaledUnit 34 {Velocity} 1 {m/s}
+$unitMgr scaledUnit 35 {VelocityPerTemperature_F} 1 {m/s-F}
+$unitMgr scaledUnit 36 {Density} 1 {kg/m3_dens}
+$unitMgr scaledUnit 37 {PowerCost} 1 {$/MWh}
+$unitMgr scaledUnit 38 {Value} 1 {$}
+$unitMgr scaledUnit 39 {ValuePerFlow} 1 {$/cms}
+$unitMgr scaledUnit 40 {ValuePerVolume} 1 {$/m3}
+$unitMgr scaledUnit 41 {LengthPerVolume} 1 {m/m3}
+$unitMgr scaledUnit 42 {LengthPerFlow} 1 {m/cms}
+$unitMgr scaledUnit 43 {PerLength} 1 {1/m}
+$unitMgr scaledUnit 44 {PerLengthTime} 1 {1/m-s}
+$unitMgr scaledUnit 45 {FlowPerLength} 1 {cms/m}
+$unitMgr scaledUnit 46 {VolumePerFlow} 1 {m3/cms}
+$unitMgr scaledUnit 47 {energyPerLength} 1 {MWH/m}
+$unitMgr scaledUnit 48 {powerPerLength} 1 {MW/m}
+$unitMgr scaledUnit 49 {Fraction} 1 {decimal}
+$unitMgr scaledUnit 50 {FractionPerFlow} 1 {decimal/cms}
+$unitMgr scaledUnit 51 {FractionPerLength} 1 {decimal/m}
+$unitMgr scaledUnit 52 {noDimension} 1 {m/m}
+$unitMgr scaledUnit 53 {VolumeSquared} 1 {m6}
+$unitMgr scaledUnit 54 {TimePerLength} 1 {s/m}
+$unitMgr scaledUnit 55 {FlowVolume} 1 {m6/t}
+$unitMgr scaledUnit 56 {FlowTime} 1 {cmshour}
+$unitMgr scaledUnit 57 {FlowPerTime} 1 {cmss}
+$unitMgr scaledUnit 58 {DateTime} 1 {FullDateTime}
+$unitMgr scaledUnit 59 {DateTime} 1 {MonthAndDay}
+$unitMgr scaledUnit 60 {String} 1 {Text}
+$unitMgr end
+# Section: Unit Schemes
+"$ws.unitScheme" addUserScheme {<UnitScheme name="Scheme 1">\
+ <Rule>\
+  <Key unitType="NONE" keyType="UnitTypeKey"/>\
+  <Attribs unitType="NONE" units="NONE" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Length" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Length" units="m" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="SqrtLength" keyType="UnitTypeKey"/>\
+  <Attribs unitType="SqrtLength" units="m1/2" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Area" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Area" units="m2" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Volume" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Volume" units="m3" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Flow" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Flow" units="cms" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="FlowSquared" keyType="UnitTypeKey"/>\
+  <Attribs unitType="FlowSquared" units="cms2" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="FlowPerSqrtLength" keyType="UnitTypeKey"/>\
+  <Attribs unitType="FlowPerSqrtLength" units="cms/m1/2" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="PerFlow" keyType="UnitTypeKey"/>\
+  <Attribs unitType="PerFlow" units="1/cms" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Power" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Power" units="MW" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="PowerPerFlow" keyType="UnitTypeKey"/>\
+  <Attribs unitType="PowerPerFlow" units="MW/cms" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Energy" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Energy" units="MWH" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Time" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Time" units="hr" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="TimeSquared" keyType="UnitTypeKey"/>\
+  <Attribs unitType="TimeSquared" units="hour2" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Mass" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Mass" units="g" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Heat" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Heat" units="J" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="EnergyFlux" keyType="UnitTypeKey"/>\
+  <Attribs unitType="EnergyFlux" units="J/m2sec" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="MassFlux" keyType="UnitTypeKey"/>\
+  <Attribs unitType="MassFlux" units="g/m2sec" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="VolFlux" keyType="UnitTypeKey"/>\
+  <Attribs unitType="VolFlux" units="g/m3sec" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Concentration" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Concentration" units="g/m3" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="AreaPerTime" keyType="UnitTypeKey"/>\
+  <Attribs unitType="AreaPerTime" units="m2/s" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="PerTime" keyType="UnitTypeKey"/>\
+  <Attribs unitType="PerTime" units="1/sec" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Temperature" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Temperature" units="C" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="LengthPerTemperature_F" keyType="UnitTypeKey"/>\
+  <Attribs unitType="LengthPerTemperature_F" units="m/F" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="TemperatureInFahren" keyType="UnitTypeKey"/>\
+  <Attribs unitType="TemperatureInFahren" units="F" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="SpecificHeat" keyType="UnitTypeKey"/>\
+  <Attribs unitType="SpecificHeat" units="J/gC" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Velocity" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Velocity" units="m/s" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="VelocityPerTemperature_F" keyType="UnitTypeKey"/>\
+  <Attribs unitType="VelocityPerTemperature_F" units="m/s-F" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Density" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Density" units="kg/m3_dens" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="PowerCost" keyType="UnitTypeKey"/>\
+  <Attribs unitType="PowerCost" units="$/MWh" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Value" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Value" units="$" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="ValuePerFlow" keyType="UnitTypeKey"/>\
+  <Attribs unitType="ValuePerFlow" units="$/cms" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="ValuePerVolume" keyType="UnitTypeKey"/>\
+  <Attribs unitType="ValuePerVolume" units="$/m3" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="LengthPerVolume" keyType="UnitTypeKey"/>\
+  <Attribs unitType="LengthPerVolume" units="m/m3" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="LengthPerFlow" keyType="UnitTypeKey"/>\
+  <Attribs unitType="LengthPerFlow" units="m/cms" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="PerLength" keyType="UnitTypeKey"/>\
+  <Attribs unitType="PerLength" units="1/m" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="PerLengthTime" keyType="UnitTypeKey"/>\
+  <Attribs unitType="PerLengthTime" units="1/m-s" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="FlowPerLength" keyType="UnitTypeKey"/>\
+  <Attribs unitType="FlowPerLength" units="cms/m" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="VolumePerFlow" keyType="UnitTypeKey"/>\
+  <Attribs unitType="VolumePerFlow" units="m3/cms" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="energyPerLength" keyType="UnitTypeKey"/>\
+  <Attribs unitType="energyPerLength" units="MWH/m" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="powerPerLength" keyType="UnitTypeKey"/>\
+  <Attribs unitType="powerPerLength" units="MW/m" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="Fraction" keyType="UnitTypeKey"/>\
+  <Attribs unitType="Fraction" units="decimal" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="FractionPerFlow" keyType="UnitTypeKey"/>\
+  <Attribs unitType="FractionPerFlow" units="decimal/cms" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="FractionPerLength" keyType="UnitTypeKey"/>\
+  <Attribs unitType="FractionPerLength" units="decimal/m" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="noDimension" keyType="UnitTypeKey"/>\
+  <Attribs unitType="noDimension" units="m/m" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="VolumeSquared" keyType="UnitTypeKey"/>\
+  <Attribs unitType="VolumeSquared" units="m6" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="TimePerLength" keyType="UnitTypeKey"/>\
+  <Attribs unitType="TimePerLength" units="s/m" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="FlowVolume" keyType="UnitTypeKey"/>\
+  <Attribs unitType="FlowVolume" units="m6/t" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="FlowTime" keyType="UnitTypeKey"/>\
+  <Attribs unitType="FlowTime" units="cmshour" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="FlowPerTime" keyType="UnitTypeKey"/>\
+  <Attribs unitType="FlowPerTime" units="cmss" format="f" prec="2"/>\
+ </Rule>\
+ <Rule>\
+  <Key unitType="String" keyType="UnitTypeKey"/>\
+  <Attribs unitType="String" units="Text" format="f" prec="2"/>\
+ </Rule>\
+</UnitScheme>\
+}
+"$ws.unitScheme" activeUnitScheme {Scheme 1}
+"$ws.unitScheme" skipTransitionScheme true 
+CanvasConfig SIMULATION IconLabelLocation {Below}
+CanvasConfig SIMULATION CanvasColor #ffffff
+CanvasConfig SIMULATION IconLabelFont {MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0}
+CanvasConfig SIMULATION IconLabelFontColor #000000
+CanvasConfig ACCOUNTING IconLabelLocation {Below}
+CanvasConfig ACCOUNTING CanvasColor #ffffff
+CanvasConfig ACCOUNTING IconLabelFont {MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0}
+CanvasConfig ACCOUNTING IconLabelFontColor #000000
+CanvasConfig GEOSPATIAL ProjDescription {}
+CanvasConfig GEOSPATIAL ProjectionUnitsString {} 0
+CanvasConfig GEOSPATIAL ProjHorizAxisText {x}
+CanvasConfig GEOSPATIAL ProjVertAxisText {y}
+CanvasConfig GEOSPATIAL GeoDescription {}
+CanvasConfig GEOSPATIAL GeoUnitsString {deg} 4
+CanvasConfig GEOSPATIAL GeoHorizAxisText {long}
+CanvasConfig GEOSPATIAL GeoVertAxisText {lat}
+CanvasConfig GEOSPATIAL ProjWellKnownText {}
+CanvasConfig GEOSPATIAL CanvasLowerLeft 0 0
+CanvasConfig GEOSPATIAL CanvasUpperRight 6450 6450
+CanvasConfig GEOSPATIAL IconLabelLocation {Below}
+CanvasConfig GEOSPATIAL IconSize 40
+CanvasConfig GEOSPATIAL CanvasColor #ffffff
+CanvasConfig GEOSPATIAL IconLabelFont {MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0}
+CanvasConfig GEOSPATIAL IconLabelFontColor #000000
+CanvasConfig GEOSPATIAL DisplayScale 1
+CanvasConfig GEOSPATIAL DisplayScaleFromImage 1
+# Section: DMI (part one)
+set mgr "$ws.dmiMgr"
+"$mgr" numInvRec 0
+# Section: New Time Series Text Annotation Notes
+set annoMgr "$ws.AnnoMgr"
+# Section: Objects
+Section {Objects}
+set obj {Reach1}
+set o "$ws.Reach1"
+$ws SimObj $obj {Reach} 348 758 {} 314 747 314 747
+"$o" geospatialCoords 0 0 314 747
+"$o" objAttributes {<SimObjAttributes simObjName="Reach1"/> \
+}
+"$o" objOrd wsList 5027
+"$o" objSlotOrderType ListOrder_DEFAULT 0 Ascend
+"$o" sDM {Routing} {No Routing} {STD}
+"$o" sDM {Routing Parameters} {None} {STD}
+"$o" sDM {Local Inflow and Solution Direction} {No Local Inflow, Solve Inflow or Outflow} {STD}
+"$o" sDM {Generate Local Inflows} {None} {STD}
+"$o" sDM {Reach Evaporation} {None} {STD}
+"$o" sDM {Depth to Flow} {None} {STD}
+"$o" sDM {Stage} {None} {STD}
+"$o" sDM {Stage Adjustment} {None} {STD}
+"$o" sDM {Volume} {None} {STD}
+"$o" sDM {Gain Loss} {None} {STD}
+"$o" sDM {Apply Gain Loss} {Current Outflow} {STD}
+"$o" sDM {Reach Seepage} {None} {STD}
+"$o" sDM {Seepage Routing} {No Routing} {STD}
+"$o" sDM {Reach Conductance} {Specify Conductance} {STD}
+"$o" sDM {Drain Elevation} {None} {STD}
+"$o" sDM {Reach Bank Storage} {None} {STD}
+"$o" sDM {Outflow Adjustment} {None} {STD}
+"$o" sDM {Diversion from Reach} {None} {STD}
+"$o" sDM {Min Diversion Bypass} {None} {STD}
+"$o" sDM {MODFLOW Link Category Reach} {None} {STD}
+"$o" sDM {Reach Account Slot Inflow} {No Method} {OLAM_NEVER}
+"$o" sDM {Reach Account Gain Loss} {No Method} {OLAM_NEVER}
+"$o" sDM {Reach Final Inflows} {Constrain Final Inflows} {STD}
+"$o" sDM {Reach Water Quality} {None} {STD}
+"$o" sDM {Water Quality Routing} {None} {STD}
+"$o" sDM {Reach Seepage Water Quality} {None} {STD}
+"$o" sDM {Reach Optimization Total Dissolved Gas} {None} {STD}
+"$o" sDM {Water Elevation at Diversion STLE} {Line} {STD}
+"$o" sDM {Water Elevation at Diversion STGE} {Piecewise} {STD}
+"$o" sDM {Water Elevation at Diversion MTLE} {Line} {STD}
+"$o" sDM {Water Elevation at Diversion MTGE} {Piecewise} {STD}
+"$o" sDM {Instantiate Reach Optimization Slots} {Instantiate Reach Optimization Slots} {STD}
+"$o" sDM {Alternative Routing on Subbasin} {None} {STD}
+"$o" {SimObjMultiSlot} {Return Flow}
+set s "$o.Return Flow"
+"$s" order 3 
+"$s" cvg 2 0.0001
+"$s" unit 8 {%f} 2
+"$s" minMax NaN NaN
+"$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 0 @ 11 NaN 
+"$o" {SeriesSlot} {Inflow}
+set s "$o.Inflow"
+"$s" order 1 
+"$s" cvg 2 0.0001
+"$s" unit 8 {%f} 2
+"$s" minMax NaN NaN
+"$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 1 @ 12 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 75 @ 11 66 
+"$o" {SeriesSlot} {Outflow}
+set s "$o.Outflow"
+"$s" order 2 
+"$s" cvg 2 0.0001
+"$s" unit 8 {%f} 2
+"$s" minMax NaN NaN
+"$s" setFSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 2 @ 13 
+"$s" setDSeries {cms} {01-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 NaN 75 @ 11 NaN 
+"$o" hideSlots 0 hideOff hideEmptyOff
+# Section: Objects/Snapshots
+# Section: Object Relationships
+set obj {Reach1}
+set o "$ws.Reach1"
+# Section: Workspace Ornaments
+Section {Workspace Ornaments}
+Section {Links}
+# Section: Links
+# Section: Link Groups
+$ws LinkGroup {Default} {linkDisplayInfo Sty:Solid Vis:1 Wid:0 Color:0 Pri:1 Ena:1}
+$ws LinkGroup {Main Channel Links} {linkDisplayInfo Sty:Solid Vis:1 Wid:0 Color:0 Pri:0 Ena:1}
+# Section: SimObj Groups
+# Section: Multiple Run Management
+Section {Multiple Run Management}
+$ws.mrm format 2
+$ws.mrm iterRplSet {RULESET\
+NAME "Iterative MRM Rules Set";\
+AGENDA_ORDER ASCENDING;\
+DESCRIPTION "";\
+PRECISION   8;\
+NOTES "";\
+BEGIN\
+\
+END\
+}
+# Section: Subbasin
+Section {Subbasins}
+# Section: Sim Analysis Info
+Section {Sim Analysis Info}
+$ws.DispatchInfo displayedObjects {Reach1} 
+$ws.DispatchInfo hiddenObjects 
+$ws.DispatchInfo axisOption {1}
+$ws.DispatchInfo updateOption {1}
+$ws.DispatchInfo showObjIcons {1}
+$ws.DispatchInfo priorityColors 
+# Section: Optimization Analysis Info
+Section {Optimization Analysis Info}
+$ws.OptAnalysisInfo optDisplayedObjects {Reach1} 
+$ws.OptAnalysisInfo optHiddenObjects 
+$ws.OptAnalysisInfo optAxisOption {1}
+$ws.OptAnalysisInfo optUpdateOption {1}
+$ws.OptAnalysisInfo showObjIcons {1}
+$ws.OptAnalysisInfo optPriorityColors 
+# Section: Scenario Manager
+Section {Scenario Manager}
+$ws.ScenarioBaseline baselineComments {} 
+# Section: RPL Expression Slot Manager
+Section {RPL Expression Slot Manager}
+set resm "$ws.RplExprSlotMgr"
+$resm collectNotes 0
+$resm resmRplSet {RULESET\
+NAME "Expression Slot Functions Set";\
+AGENDA_ORDER ASCENDING;\
+DESCRIPTION "";\
+PRECISION   8;\
+NOTES "";\
+BEGIN\
+\
+END\
+}
+# Section: SnapShot Manager
+Section {SnapShot Manager}
+# Section: Output Device Manager
+Section {Output Device Manager}
+$ws collectRBSRunAnalysisInfo 1
+$ws collectRPLPerformanceInfo 1
+$ws RPLNumericComparisonTolerance 0
+$ws RPLWhileExprMaxIterations 10000
+$ws SimRunAnalysisData +begin+
+set o "$ws.Reach1"
+$o callSetupDispatch
+$o dispatchedEntryDict {02-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1  0 solveNROutflow @ 11 {} END
+$o dispatchedEntryDict {02-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1  1 {} @ 12 END
+$o solvedFlags {02-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 1 @ 11 0 END
+$o solvedWQFlags {02-01-2018 00:00:00} {01-01-2019 00:00:00} 1 MONTH -1 0 @ 12 END
+$ws RunAnalysisData  +end+
+# Section: Name Maps
+set mgr "$ws.nameMapMgr"
+"$mgr" format 2
+"$mgr" end
+# Section: Datasets
+set mgr "$ws.datasetMgr"
+"$mgr" format 1
+"$mgr" end
+# Section: DMI (part two)
+set mgr "$ws.dmiMgr"
+"$mgr" format 3
+"$mgr" locked 0
+"$mgr" showProgDlg 0
+"$mgr" showStatDlg 0
+"$mgr" end
+# Section: Diagnostic Object
+Section {Diagnostic Settings}
+cwDiag diagEnabled 1
+cwDiag diagFile 0 {}
+cwDiag toWindow 0
+cwDiag filterByLevel 1 2
+cwDiag filterByRegex 0 {}
+Diag optInfo 0
+Diag Advanced 0
+# Section: Global Functions Set Manager
+Section {Gobal Functions Set Manager}
+# Section: RuleSet Manager
+Section {RuleSet Manager}
+set rsm "$ws.RulesetMgr"
+# Section: Optimization Set Manager
+Section {Optimization Set Manager}
+set mgr "$ws.optSetMgr"
+# Section: Optimization
+Section {Optimization}
+$ws.RplBasedOptController setParameter {ADVANCE 2}
+$ws.RplBasedOptController setParameter {SIMPLEX PGRADIENT 4}
+$ws.RplBasedOptController setParameter {SIMPLEX TOLERANCE FEASIBILITY 1.000000e-009}
+$ws.RplBasedOptController setParameter {SIMPLEX TOLERANCE MARKOWITZ 5.000000e-001}
+$ws.RplBasedOptController setParameter {PREPROCESSING AGGREGATOR 10}
+$ws.RplBasedOptController setParameter {PREPROCESSING DUAL -1}
+$ws.RplBasedOptController setParameter {PREPROCESSING REDUCE 1}
+$ws.RplBasedOptController setParameter {TIMELIMIT 3.000000e+003}
+$ws.RplBasedOptController setParameter {SIMPLEX DISPLAY 0}
+# Section: Simulation Controller
+Section {Simulation Controller}
+$ws.SimControl ShouldExecInitRules 1
+# Section: Rule Controller
+Section {Rule Controller}
+$ws.RuleControl ShouldExecInitRules 1
+# Section: Initialization Rules
+Section {Initialization Rules}
+$ws initRules {RULESET\
+NAME "Initialization Rules Set";\
+AGENDA_ORDER ASCENDING;\
+DESCRIPTION "";\
+PRECISION   8;\
+NOTES "";\
+BEGIN\
+\
+END\
+}
+# Section: RPL Display Settings
+Section {RPL Display Settings}
+"$ws.RplDisplaySettings" {<RplDisplaySettings>\
+  <UserFont>MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0</UserFont>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_STATEMENT" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_EXPRESSION" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_STRING" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ASSIGNMENT" priority="2" before="1" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_FUNCTION_NAME" symb="VisTokSym_STRING" priority="7" before="0" after="1" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_SEPARATOR" priority="1" before="0" after="1" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_IF" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_THEN" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ELSE" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ELSEIF" priority="0" before="1" after="0" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDIF" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_PLUS" priority="3" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_MINUS" priority="3" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_TIMES" priority="3" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_MODULO" priority="5" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_INT_DIVISION" priority="5" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_POWER" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LOGICAL_OR" priority="4" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LOGICAL_AND" priority="4" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LOGICAL_IN" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LESS_THAN" priority="6" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_GREATER_THAN" priority="6" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LESS_THAN_OR_EQUAL" priority="6" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_GREATER_THAN_OR_EQUAL" priority="6" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_CONCAT" priority="8" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_TO" priority="8" before="1" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LOGICAL_NOT" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_LENGTH" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_STRINGIFY" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_IS_NAN" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_NAN_TO_ZERO" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_JOIN_OBJ_SLOT" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_JOIN_OBJ_ACCT_SLOT" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_OPERATOR" op="RplExprOpId_OBJ_SLOT_LOOKUP" priority="40" before="0" after="0" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_FOR" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_IN" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_WITH" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_EQUAL" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_WHILE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_MAPLIST" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_DO" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDFOR" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDWHILE" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDWITH" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDMAPLIST" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDFOREACH" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_INSERT" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_INTO" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_APPEND" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ONTO" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_FIND" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_WITHIN" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_REMOVE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ITEM" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_SUBSTITUTE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_FORITEM" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_OF" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_INDEX" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_FROM" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_PRINT" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_EXEC_SCRIPT" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ADD_SCONSTRAINT" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ADD_HCONSTRAINT" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_MINIMIZE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_MAXIMIZE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_FREEZE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_SUMMATION" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_RMAXIMIN" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_SMAXIMIN" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_REWARD_TABLE" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDSUMMATION" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_ENDMAXIMIN" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_REWARD_TABLE_END" priority="0" before="1" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_COMMENT" priority="0" before="1" after="1" indentBef="0" indentAft="0"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_STAT_SUM" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_STAT_AVE" priority="0" before="0" after="1" indentBef="0" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_STOP_RUN" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <LineBreak type="BreakType_TOKEN" symb="VisTokSym_WARNING" priority="40" before="0" after="0" indentBef="5" indentAft="5"/>\
+  <TextColor type="RplColor_DEFAULT_FG" colorARGB="#ff000000"/>\
+  <TextColor type="RplColor_SEL_DEFAULT_FG" colorARGB="#ff000000"/>\
+  <TextColor type="RplColor_TYPES_NAMES_VALS" colorARGB="#ff2600ff"/>\
+  <TextColor type="RplColor_SEL_TYPES_NAMES_VALS" colorARGB="#ff000000"/>\
+  <TextColor type="RplColor_PREDEF_FUNCTIONS" colorARGB="#ff0ab400"/>\
+  <TextColor type="RplColor_COMMENTS" colorARGB="#ffd12e31"/>\
+  <TextColor type="RplColor_DIS_FUNCTIONS" colorARGB="#ff9f1535"/>\
+  <TextColor type="RplColor_THE_BG" colorARGB="#ffffffff"/>\
+  <TextColor type="RplColor_SELECTION_BG" colorARGB="#ffffffb4"/>\
+  <TextColor type="RplColor_DIS_OBJS_XHATCH" colorARGB="#ffc0c0c0"/>\
+  <TextColor type="RplColor_FUNCTIONS" colorARGB="#ff844800"/>\
+  <TextColor type="RplColor_EXPRESSIONS" colorARGB="#ff430067"/>\
+  <TextColor type="RplColor_EXPRESSIONS_BG" colorARGB="#fff5f5f5"/>\
+  <ShowElemNumbers value="false" />\
+</RplDisplaySettings>}
+# Section: Script Manager
+Section {Script Manager}
+# Show Script Manager On Model Load
+$ws.rwScriptMgr rwShowScriptMgrOnModelLoad {\
+<ShowScriptMgrOnModelLoad>\
+   <YesOrNo>false</YesOrNo>\
+   <DefaultScriptGroup>All Scripts</DefaultScriptGroup>\
+</ShowScriptMgrOnModelLoad>\
+}
+# Section: Object Attribute Manager
+Section {Object Attribute Manager}
+# Section: Object Attribute Set
+"$ws.objectAttribMgr" objectAttribSet {<ObjAttributeSet/> \
+}
+# Section: END (successful completion)
+Section {Done}
