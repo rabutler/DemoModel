@@ -1,0 +1,1096 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+<head>
+<title>CRSS Flaming Gorge Rules Report</title>
+<style  type="text/css"><!--
+  body {font-family: sans-serif;}
+  h1 { font: bold 130% sans-serif; }
+  h2 { font: 130% sans-serif; }
+  h3 { font: 120% sans-serif; }
+  h4 { font: 110% sans-serif; }
+  h5 { font: italic 100% sans-serif; }
+  h6 { font: italic 100% sans-serif; }
+  .ItemLabel { font: bold 100% sans-serif; }
+  p {margin-left: 1em}
+  .DisplayControl {margin-right: 5px;}
+  .ItemLabel {margin-left: 1em; font-weight: bold;}
+  .ForLayout {border-style: none; border-width: 0px; padding: 0px;}
+  table {border: 2px ridge black;}
+  table {border-collapse: collapse;}
+  td, th {padding: 3px; border: 2px ridge gray;}
+  body {min-width:4in;}
+  ul {margin-left: 0px; padding-left: 20px;}
+@media print
+{
+  body {font-family: serif;}
+  h1 { font: bold 130% serif; }
+  h2 { font: 130% serif; }
+  h3 { font: 120% serif; }
+  h4 { font: 110% serif; }
+  h5 { font: italic 100% serif; }
+  h6 { font: italic 100% serif; }
+  .ItemLabel { font: bold 100% serif; }
+  .DisplayControl {display: none;}
+  .ForLayout {border-style: none; border-width: 0px; padding: 0px;}
+}
+--></style>
+<script type="text/javascript" language="JavaScript"><!--
+  function toggleDisplay(bodyDivId, controlId)
+  {
+    if (document.getElementById(bodyDivId).style.display == "none")
+    {
+       document.getElementById(bodyDivId).style.display = "block";
+       document.getElementById(controlId).src = "RiverWareReportImages/TriangleDown.png";
+    }
+    else
+    {
+       document.getElementById(bodyDivId).style.display = "none";
+       document.getElementById(controlId).src = "RiverWareReportImages/TriangleRight.png";
+     }
+  }
+ 
+  function displayDiv(bodyDivId)
+  {
+      document.getElementById(bodyDivId).style.display = "block";
+      var parent = document.getElementById(bodyDivId).parentNode
+          if (parent)
+          {
+              displayDiv(parent.id);
+          }
+  }
+//--></script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<h1>CRSS Flaming Gorge Rules Report</h1>
+<div id="RiverWare_Report_Item_0.1_Content" style="display:block;">
+<p style=" margin-top:0px; margin-bottom:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:10pt;">This is report details the Flaming Gorge rule set, it's associated functions, and input data for CRSS.</span></p>
+</div>
+<div id="RiverWare_Report_Item_0.2_Section" style="display:block;">
+<img class="DisplayControl" id="RiverWare_Report_Item_0.2_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.2_Content', 'RiverWare_Report_Item_0.2_DisplayToggle')"></img>Contents</div>
+<div id="RiverWare_Report_Item_0.2_Content" style="display:block;">
+<ul>
+<li><a href="#RiverWare_Report_Item_0.3" onclick="displayDiv('RiverWare_Report_Item_0.3')">1 Flaming Gorge CRSS Rules</a></li>
+<ul>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25')">1.1 <img src="RiverWareReportImages/RplReportGroup0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Flaming Gorge Rules Report Group</a></li>
+<ul>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.0" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.0')">1.1.1 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Calculate April To July Volume Annual Slot</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.1" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.1')">1.1.2 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Update Historic Record</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.2" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.2')">1.1.3 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Calc April July Volume Monthly</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.3" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.3')">1.1.4 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Calc Percent Exceedance</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.4" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.4')">1.1.5 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Base Flow Hydrologic Classification</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.5" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.5')">1.1.6 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Base Flow Operations</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.6" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.6')">1.1.7 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Spring Flow Hydrologic Classification</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.7" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.7')">1.1.8 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Release to Meet ULDE</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.8" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.8')">1.1.9 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Set Flaming Gorge Daily April to July Schedule</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.9" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.9')">1.1.10 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Adjust Daily for August Base Flow</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.10" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.10')">1.1.11 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Min Flow in Extremely Dry Years with Low Storage</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.11" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.11')">1.1.12 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Sum Daily Flaming Gorge Release Schedule to Monthly</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.12" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.12')">1.1.13 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Fill Daily Flaming Gorge Releases for Months Outside of April-July</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.2.RplObj25.13" onclick="displayDiv('RiverWare_Report_Item_0.3.2.RplObj25.13')">1.1.14 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Calculate Daily Jensen Flows</a></li>
+</ul>
+</ul>
+<ul>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26')">1.2 <img src="RiverWareReportImages/RplReportGroup0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Flaming Gorge Function Report Group</a></li>
+<ul>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.0" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.0')">1.2.1 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> MakeDailyFlamingGorgeReleaseDateandFlowList</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.1" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.1')">1.2.2 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> FindYampaPeakDateForYear</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.2" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.2')">1.2.3 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> FindYampa10kcfsBypassDateForYear</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.3" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.3')">1.2.4 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> FindYampa14kcfsPPCDateForYear</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.4" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.4')">1.2.5 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> CountDaysAboveThreshold</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.5" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.5')">1.2.6 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> CountDaysBelowThreshold</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.6" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.6')">1.2.7 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> AugustDownRamp</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.7" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.7')">1.2.8 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> SpringFlowA-JVolumeUpdate</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.8" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.8')">1.2.9 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> BaseFlowA-JVolumeUpdate</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.9" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.9')">1.2.10 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitude</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.10" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.10')">1.2.11 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitudeUnconstrained</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.11" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.11')">1.2.12 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> DaysToDownramp</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.12" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.12')">1.2.13 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> DaysToRampUp</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.13" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.13')">1.2.14 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtPPC</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.14" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.14')">1.2.15 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtPPCUnconstrained</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.15" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.15')">1.2.16 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetMay1TargetElevation</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.16" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.16')">1.2.17 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> AveRampUpFlow</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.17" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.17')">1.2.18 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> AveRampDownFlow</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.18" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.18')">1.2.19 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetDaysAtBypass</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.19" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.19')">1.2.20 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> PredictedFGInflow</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.20" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.20')">1.2.21 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> PredictedYampaFlow</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.21" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.21')">1.2.22 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> ForecastComputeDemandsBelow</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.22" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.22')">1.2.23 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> TargetHWGivenInflowforOneMonth</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.23" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.23')">1.2.24 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> CountSustainedDaysAboveThreshold</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.24" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.24')">1.2.25 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtBypass</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.3.RplObj26.25" onclick="displayDiv('RiverWare_Report_Item_0.3.3.RplObj26.25')">1.2.26 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtBypassUnconstrained</a></li>
+</ul>
+</ul>
+<ul>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27')">1.3 <img src="RiverWareReportImages/RplReportGroup0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Flaming Gorge Data Slots Report Group</a></li>
+<ul>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.0" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.0')">1.3.1 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> AbsoluteMinRelease</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.1" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.1')">1.3.2 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> BaseFlowDownrampRateNoUnits</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.2" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.2')">1.3.3 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> BaseFlowMagnitudeLimits</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.3" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.3')">1.3.4 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> BypassCapacity</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.4" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.4')">1.3.5 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> BypassThreshold</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.5" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.5')">1.3.6 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> DaysAtPowerPlantCapacity</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.6" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.6')">1.3.7 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> HydrologicClassPercentileLimits</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.7" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.7')">1.3.8 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> MaxDaysAtBypassCapacity</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.8" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.8')">1.3.9 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> MaxPE</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.9" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.9')">1.3.10 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> May1TargetElevation</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.10" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.10')">1.3.11 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> MinFlow</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.11" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.11')">1.3.12 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> PowerPlantCapacity</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.12" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.12')">1.3.13 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> RampUpRate</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.13" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.13')">1.3.14 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> SpringMinimumPeak</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.14" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.14')">1.3.15 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> YampaDaysAbove10000ForBypass</a></li>
+<li><a href="#RiverWare_Report_Item_0.3.4.RplObj27.15" onclick="displayDiv('RiverWare_Report_Item_0.3.4.RplObj27.15')">1.3.16 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> YampaDaysAbove14000ForPPC</a></li>
+</ul>
+</ul>
+</ul>
+</div>
+<h2 id="RiverWare_Report_Item_0.3_Section"><a id="RiverWare_Report_Item_0.3"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3_Content', 'RiverWare_Report_Item_0.3_DisplayToggle')"></img>1 Flaming Gorge CRSS Rules</h2>
+<div id="RiverWare_Report_Item_0.3_Content" style="display:block;">
+<div id="RiverWare_Report_Item_0.3.1_Content" style="display:block;">
+<p style=" margin-top:0px; margin-bottom:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:10pt;">Rules are listed in order of firing (reverse of priority). </span></p>
+</div>
+<h3 id="RiverWare_Report_Item_0.3.2.RplObj25_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25_Content', 'RiverWare_Report_Item_0.3.2.RplObj25_DisplayToggle')"></img>1.1 <img src="RiverWareReportImages/RplReportGroup0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Flaming Gorge Rules Report Group</h3>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25_Content" style="display:block;">
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.0_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.0"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.0_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.0_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.0_DisplayToggle')"></img>1.1.1 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Calculate April To July Volume Annual Slot</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.0_Content" style="display:block;">
+<p><p>Execution Constraint: None</p>
+<p>Description: Using the historic monthly flows (HistoricData data object) for the unregulated inflow into Flaming Gorge  and for the Yampa at Deerlodge, sum April to July to come up with a spring volume and store in the appropriate slot.  Note that the Yampa at Deerlodge is the summation of the Yampa at Maybell and the Little Snake at Lily and not the actual Deerlodge gage values.  The values stored in these slots are used to compute the year type thresholds. </p>
+<p>Slots Set: FlamingGorgeData.AprJulVolAnnual[1969 - 2013], FlamingGorgeData.YampaAprJulVolAnnual[1922 - 2010] </p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.0.Statements.png#d09f127c-de4f-485d-ab82-e950aa574b9a" width="627" height="314" border="1" alt="Statements"/></p>
+<p class="ItemLabel">Execution Constraint</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.0.ExecConstraint.png#cfced4bf-b8c7-4820-a712-c502f38125bf" width="139" height="21" border="1" alt="Execution Constraint"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RunStartDate</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> NumberToDate</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetYearAsString</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDates</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDate</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumFlowsToVolumeSkipNaN</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumFlowsToVolume</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.1_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.1"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.1_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.1_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.1_DisplayToggle')"></img>1.1.2 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Update Historic Record</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.1_Content" style="display:block;">
+<p><p>Execution Constraint: Execute every August if HistoricData.UpdateHistoricRecord is equal to 1 </p>
+<p>Description: This rule adds on modeled spring volumes (unregulated for Flaming Gorge and gaged for the Yampa) to the historic record.  The slots which are set by Calculate April to July Volume Annual Slot are updated so that the previously modeled spring volumes will be used to compute the next years hydroglogic year type thresholds.  Though this rule reflects the procedure currently implemented by the operator, it can be viewed as an interpretation of the ROD.  To use a static period (unregulated inflow into Flaming Gorge found in slot HistoricData.FlamingGorgeUnregulatedInflow), set HistoricData.UpdateHistoricRecord to 0 to effectively shut this rule off. </p>
+<p>Slots Set: FlamingGorgeData.YampaAprJulVolAnnual, FlamingGorgeData.AprJulVolAnnual </p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.1.Statements.png#b57c2cf3-9acf-4586-bfc9-9698a2ca820f" width="502" height="178" border="1" alt="Statements"/></p>
+<p class="ItemLabel">Execution Constraint</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.1.ExecConstraint.png#efbe3434-5ddd-4ef4-a111-f3d6e02ca0cf" width="386" height="21" border="1" alt="Execution Constraint"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumFlowsToVolume</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> CalcUnregulatedInflowVolume</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.2_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.2"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.2_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.2_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.2_DisplayToggle')"></img>1.1.3 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Calc April July Volume Monthly</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.2_Content" style="display:block;">
+<p><p>Execution Constraint: None<br>
+ <br>
+Description: Compute the current years April to July Flaming Gorge unregulated inflow volume and the April to July gaged volume at Deerlodge for the Yampa River at Deerlodge.  These volumes will determine the current years hydrologic year type when compared to the historic record.  </p>
+<p>Slots Set: FlamingGorgeData.AprJulVolSpringFlow, FlamingGorgeData.AprJulyVolBaseFlow, FlamingGorgeData.YampaAprJulVol <br>
+</p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.2.Statements.png#7cc68ca8-9236-428f-814b-83fd5ee21fe7" width="578" height="352" border="1" alt="Statements"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RunStartDate</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumFlowsToVolume</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SpringFlowA-JVolumeUpdate</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> BaseFlowA-JVolumeUpdate</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.3_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.3"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.3_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.3_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.3_DisplayToggle')"></img>1.1.4 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Calc Percent Exceedance</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.3_Content" style="display:block;">
+<p><p>Execution Constraint: None <br>
+  <br>
+Description:  By comparing the current years April - July volume to the historic record, the percent exceedance is determined, this dictates the hydrologic year type (refer to HydrologicClassPercentileLimits for the percent exceedance ranges that correspond to each year type).  The current years April to July volume is set by the Calc April July Volume Monthly rule.  If HistoricData.UpdateHistoricRecord is set to 1, then the true historic record plus the modeled volumes up to the previous model year are used for computing the years percent exceedance.  If HistoricData.UpdateHistoricRecord is set to 0, then only the true historic record is used to compute the years percent exceedance. <br>
+  <br>
+Slots Set: FlamingGorgeData.AprJulPercentExceedanceSpringFlow, FlamingGorgeData.AprJulPercentExceedanceBaseFlow, FlamingGorgeData.YampaAprJulVol <br>
+</p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.3.Statements.png#fe8b372d-f0d7-4554-bcea-67858a91a9f8" width="1065" height="2001" border="1" alt="Statements"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetNumbers</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> PercentRank</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RunStartDate</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> NumberToDate</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetYearAsString</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetYear</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDate</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetSlotVals</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Split</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.4_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.4"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.4_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.4_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.4_DisplayToggle')"></img>1.1.5 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Base Flow Hydrologic Classification</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.4_Content" style="display:block;">
+<p><p>Execution Constraint: June - February <br>
+            <br>
+Description: Use observed April-July volume (unregulated Flaming Gorge inflow) to determine hydrologic classification. <br>
+  <br>
+- Classification will not change from spring classification during a single run. <br>
+- Between runs with start dates August-December, classification will not change.<br>
+- In June and July treat the forecast as the observed in order to get an estimate of volume and set classification. <br>
+- May vary between runs with start dates Jan - July since incomplete or no observations are available. <br>
+  <br>
+Slots Set: Sets FGData.BaseFlowHClass </p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.4.Statements.png#a9ebef3c-9c64-4ff7-86f0-00e9d397f1b0" width="474" height="599" border="1" alt="Statements"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RunStartDate</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.5_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.5"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.5_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.5_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.5_DisplayToggle')"></img>1.1.6 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Base Flow Operations</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.5_Content" style="display:block;">
+<p><p>Execution Constraint: Not March, April <br>
+  <br>
+Description: Sets the base flows for all months except March and April.  Base flow releases are set to stay below maximum pool elevation (PE), minimum flows or stay within the base flow range based on the hydrologic classification.  </p>
+<p>Slots Set: FlamingGorge.Outflow </p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.5.Statements.png#b90035f2-ad39-4a31-9698-89a06790faea" width="543" height="430" border="1" alt="Statements"/></p>
+<p class="ItemLabel">Execution Constraint</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.5.ExecConstraint.png#2a2d31b8-e201-4292-812b-b52e7ee3346c" width="189" height="21" border="1" alt="Execution Constraint"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> ElevationToStorage</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumFlowsToVolume</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Max</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> EstimateEvaporation</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitude</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.6_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.6"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.6_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.6_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.6_DisplayToggle')"></img>1.1.7 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Spring Flow Hydrologic Classification</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.6_Content" style="display:block;">
+<p><p>Execution Constraint: March - July <br>
+            <br>
+Description: Use forecast of April-July volume unregulated Flaming Gorge inflow and Yampa gaged inflow to determine the hydrologic classification for the given month. <br>
+            <br>
+- In any particular month, classify based on following season forecasted April - July unregulated inflow. <br>
+- When running from different start dates, the hydrologic classification may change from month to month but will not change during a single run. <br>
+  <br>
+Slots Set: FlamingGorgeData.SpringHClass, FlamingGorgeData.YampaHClass</p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.6.Statements.png#7cc693a5-2a41-4446-b5af-1627ac2bf229" width="477" height="518" border="1" alt="Statements"/></p>
+<p class="ItemLabel">Execution Constraint</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.6.ExecConstraint.png#e0a2f2cd-030d-4738-833c-01de1017faa5" width="368" height="21" border="1" alt="Execution Constraint"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetMonthAsString</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.7_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.7"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.7_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.7_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.7_DisplayToggle')"></img>1.1.8 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Release to Meet ULDE</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.7_Content" style="display:block;">
+<p><p>Execution Constraint: March, April <br>
+  <br>
+Description: Release at whatever rate is necessary to meet the May 1 upper limit draw-down elevation (ULDE) from the EIS.  Note that if the reservoir is already below the ULDE, then the outflow will be constrained to the minimum base flow for the current year type. <br>
+  <br>
+Slots Set: FlamingGorge.Outflow </p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.7.Statements.png#57de5fea-0661-445a-b2b8-5bead27a66de" width="405" height="38" border="1" alt="Statements"/></p>
+<p class="ItemLabel">Execution Constraint</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.7.ExecConstraint.png#6997da14-dc97-4504-8d00-51a4f78241f7" width="165" height="21" border="1" alt="Execution Constraint"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitudeUnconstrained</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.8_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.8"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.8_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.8_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.8_DisplayToggle')"></img>1.1.9 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Set Flaming Gorge Daily April to July Schedule</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.8_Content" style="display:block;">
+<p><p>Execution Constraint: April-July <br>
+  <br>
+Description: Makes the daily date and flow list using function MakeDailyFlamingGorgeReleaseDateandFlowList and assigns it to the data object.<br>
+  <br>
+Slots Set: DailyFlows.FlamingGorgeDaily</p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.8.Statements.png#bfc07761-6f45-4646-a2bd-27cfba037dc4" width="634" height="344" border="1" alt="Statements"/></p>
+<p class="ItemLabel">Execution Constraint</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.8.ExecConstraint.png#ae109d31-ffca-41d5-a0a4-2dba04e35c2a" width="234" height="21" border="1" alt="Execution Constraint"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MakeDailyFlamingGorgeReleaseDateandFlowList</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.9_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.9"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.9_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.9_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.9_DisplayToggle')"></img>1.1.10 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Adjust Daily for August Base Flow</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.9_Content" style="display:block;">
+<p><p>Execution Constraint: August <br>
+  <br>
+Description: Sets August releases at steady base flows or downramps from high FG releases through July 31st to August base flows. Calculates the daily flow for FlamingGorgeDaily and YampaDailyDeerlodgeDepleted.   <br>
+  <br>
+Slots Set: DailyFlows.FlamingGorgeDaily, DailyFlows.YampaDailyDeerlodgeDepleted<br>
+</p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.9.Statements.png#4c8d382a-f6d1-4473-9b65-dd451cee3e26" width="811" height="719" border="1" alt="Statements"/></p>
+<p class="ItemLabel">Execution Constraint</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.9.ExecConstraint.png#d034ed6b-7ec9-4140-a333-3bf2cf76aa20" width="131" height="21" border="1" alt="Execution Constraint"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDates</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitude</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> AugustDownRamp</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RoundToNearestDay</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.10_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.10"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.10_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.10_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.10_DisplayToggle')"></img>1.1.11 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Min Flow in Extremely Dry Years with Low Storage</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.10_Content" style="display:block;">
+<p><p>Execution Constraint: Not May, June or July <br>
+  <br>
+Description: Flaming Gorge can relase less than 800 cfs  to protect the remaining water in storage if Flaming Gorge pool elevation is below MinReleaseTrigger and there is extremely low hydrology (.98 exceedance).  </p>
+<p>Slots Set: FlamingGorge.Outflow, FlamingGorgeData.LowReleaseFlag Execution Constraint: Not May, June or July </p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.10.Statements.png#d6e8dcf1-4ff7-4751-b527-84dcae96b235" width="437" height="123" border="1" alt="Statements"/></p>
+<p class="ItemLabel">Execution Constraint</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.10.ExecConstraint.png#f9b84799-8c13-469c-ad7b-193264d1514b" width="219" height="21" border="1" alt="Execution Constraint"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.11_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.11"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.11_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.11_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.11_DisplayToggle')"></img>1.1.12 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Sum Daily Flaming Gorge Release Schedule to Monthly</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.11_Content" style="display:block;">
+<p><p>Execution Constraint: April-August <br>
+  <br>
+Description: Sets FG outflow to the aggregated daily release volume.<br>
+  <br>
+Slots Set: FlamingGorge.Outflow</p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.11.Statements.png#13f77975-ba61-4657-97f1-16d7cb252322" width="541" height="106" border="1" alt="Statements"/></p>
+<p class="ItemLabel">Execution Constraint</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.11.ExecConstraint.png#eeb78b0d-e8a8-4458-a621-c65d974a7797" width="286" height="21" border="1" alt="Execution Constraint"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> VolumeToFlow</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumFlowsToVolume</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.12_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.12"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.12_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.12_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.12_DisplayToggle')"></img>1.1.13 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Fill Daily Flaming Gorge Releases for Months Outside of April-July</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.12_Content" style="display:block;">
+<p><p>Execution Constraint: September-March <br>
+  <br>
+Description: Sets the daily FG releases and daily Yampa releases to the average monthly FG outflow and Yampa gaged outflow, respectively. These values are used in Calculate Daily Jensen Flows rule. <br>
+  <br>
+Slots Set: DailyFlows.FlamingGorgeDaily, DailyFlows.YampaDailyDeerlodgeDepleted</p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.12.Statements.png#d1788068-1f3f-44cf-952a-0e425a31420b" width="527" height="140" border="1" alt="Statements"/></p>
+<p class="ItemLabel">Execution Constraint</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.12.ExecConstraint.png#05e6d283-1af5-433d-bef5-b905274b2756" width="310" height="21" border="1" alt="Execution Constraint"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDates</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.2.RplObj25.13_Section"><a id="RiverWare_Report_Item_0.3.2.RplObj25.13"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.2.RplObj25.13_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.2.RplObj25.13_Content', 'RiverWare_Report_Item_0.3.2.RplObj25.13_DisplayToggle')"></img>1.1.14 <img src="RiverWareReportImages/RplReportItem.RplBlock0.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> Calculate Daily Jensen Flows</h4>
+<div id="RiverWare_Report_Item_0.3.2.RplObj25.13_Content" style="display:block;">
+<p><p>Execution Constraint: None<br>
+  <br>
+Description: Calculates the daily Jensen flow using daily FG releases and daily Yampa flows with the assumption that FG releases are lagged one day.<br>
+  <br>
+Slots Set: DailyFlows.JensenDaily</p></p>
+<p class="ItemLabel">Statements</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.2.RplObj25.13.Statements.png#682b7ad2-a687-438d-8927-7a7f49ec6dc8" width="704" height="395" border="1" alt="Statements"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RunStartDate</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetMonth</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDates</li>
+</ul>
+</p>
+</div>
+</div>
+<h3 id="RiverWare_Report_Item_0.3.3.RplObj26_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26_Content', 'RiverWare_Report_Item_0.3.3.RplObj26_DisplayToggle')"></img>1.2 <img src="RiverWareReportImages/RplReportGroup0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Flaming Gorge Function Report Group</h3>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26_Content" style="display:block;">
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.0_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.0"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.0_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.0_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.0_DisplayToggle')"></img>1.2.1 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> MakeDailyFlamingGorgeReleaseDateandFlowList</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.0_Content" style="display:block;">
+<p><p>Arguements: Start date of month</p>
+<p>Description: Functions makes the daily date and flow list based on date of Yampa peak and calculated days of ramp up, PPC, bypass and ramp down. </p>
+<p>Returns: Daily date and flow list</p></p>
+<p><b>Return Type:</b>  LIST</p>
+<p><b>Arguments:</b>  <ul>
+<li>DATETIME  startdate</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.0.Body.png#b1030c23-8679-4269-8adf-2855cc36509a" width="1185" height="3414" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitude</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtPPC</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDaysAtBypass</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> TargetHWGivenInflowforOneMonth</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> FindYampaPeakDateForYear</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> FindYampa10kcfsBypassDateForYear</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> FindYampa14kcfsPPCDateForYear</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> CountDaysAboveThreshold</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RoundToNearestDay</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Max</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Min</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> DateMax</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> DateMin</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDates</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.1_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.1"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.1_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.1_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.1_DisplayToggle')"></img>1.2.2 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> FindYampaPeakDateForYear</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.1_Content" style="display:block;">
+<p><p>Arguements: None </p>
+<p>Description: Finds the date which the max daily flow for YampaDailyDeerlodgeDepleted occurs. </p>
+<p>Returns: Date of Yampa peak flow.</p></p>
+<p><b>Return Type:</b>  DATETIME</p>
+<p><b>Arguments:</b>  None</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.1.Body.png#8df21db4-8400-49ca-99b6-e952e5582c7a" width="622" height="174" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MaxItem</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDates</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetSlotVals</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.2_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.2"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.2_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.2_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.2_DisplayToggle')"></img>1.2.3 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> FindYampa10kcfsBypassDateForYear</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.2_Content" style="display:block;">
+<p><p>Arguements: Number of days at bypass, Yampa peak date</p>
+<p>Description: Determines the date to bypass if the Yampa River flows are at 10,000 cfs for the length of time necessary to meet flow targets. </p>
+<p>Returns: Date to bypass.</p></p>
+<p><b>Return Type:</b>  DATETIME</p>
+<p><b>Arguments:</b>  <ul>
+<li>NUMERIC  BypassDays</li>
+<li>DATETIME  YampaPeakDate</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.2.Body.png#1beab361-9fe2-4f71-a59f-43c048fe15e0" width="915" height="2829" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> CountDaysAboveThreshold</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> CountDaysBelowThreshold</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RoundToNearestDay</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> DateMax</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDates</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetNumbers</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetSlotVals</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.3_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.3"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.3_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.3_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.3_DisplayToggle')"></img>1.2.4 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> FindYampa14kcfsPPCDateForYear</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.3_Content" style="display:block;">
+<p><p>Arguements: Number of days at PPC, Yampa peak date</p>
+<p>Description: Determines the date to increase to PPC if the Yampa River flows are at 14,000 cfs for the length of time necessary to meet flow targets.</p>
+<p>Returns: Date to increase to PPC.</p></p>
+<p><b>Return Type:</b>  DATETIME</p>
+<p><b>Arguments:</b>  <ul>
+<li>NUMERIC  PPCDays</li>
+<li>DATETIME  YampaPeakDate</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.3.Body.png#b909d793-7441-4f46-9938-28f33d3f46db" width="885" height="1470" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> CountDaysBelowThreshold</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> DaysAboveThreshold</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RoundToNearestDay</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Max</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDates</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetNumbers</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetSlotVals</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.4_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.4"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.4_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.4_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.4_DisplayToggle')"></img>1.2.5 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> CountDaysAboveThreshold</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.4_Content" style="display:block;">
+<p><p>Arguements: List of flows, minimum flow criteria </p>
+<p>Description: Counts how many flows in list are &gt;= minimum flow criteria. </p>
+<p>Returns: Number of flows in list &gt;= minimum.<br>
+</p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>LIST  flows</li>
+<li>NUMERIC  minflow</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.4.Body.png#4823afdb-266b-47d4-8834-58eab7e9aad0" width="392" height="123" border="1" alt="Body"/></p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.5_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.5"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.5_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.5_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.5_DisplayToggle')"></img>1.2.6 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> CountDaysBelowThreshold</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.5_Content" style="display:block;">
+<p><p>Arguements: List of flows, minimum flow criteria </p>
+<p>Description: Counts how many flows in list are &lt;= minimum flow criteria. </p>
+<p>Returns: Number of flows in list &lt;= minimum.</p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>LIST  flows</li>
+<li>NUMERIC  minflow</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.5.Body.png#f8c7cb0b-3dfd-43f1-9302-2107da25f089" width="392" height="123" border="1" alt="Body"/></p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.6_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.6"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.6_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.6_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.6_DisplayToggle')"></img>1.2.7 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> AugustDownRamp</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.6_Content" style="display:block;">
+<p><p>Arguements: None</p>
+<p>Description: Create a list for August flows whether downramping from bypass flows or not. When bypass releases extend through the entire A-J period to July 31st, this function downramps to base flows in August.</p>
+<p>Returns: List of August flows. </p></p>
+<p><b>Return Type:</b>  LIST</p>
+<p><b>Arguments:</b>  None</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.6.Body.png#e35613d2-9386-451a-92f3-6bb952656cf3" width="1048" height="1027" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitude</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> TargetHWGivenInflowforOneMonth</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RoundToNearestDay</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Max</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDates</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.7_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.7"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.7_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.7_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.7_DisplayToggle')"></img>1.2.8 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> SpringFlowA-JVolumeUpdate</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.7_Content" style="display:block;">
+<p><p>Arguements: None</p>
+<p>Description: Calculates the April - July unregulated inflow volume (A-J Volume) to Flaming Gorge from the previous season. This volume is used for determining baseflow operations. Transbasin depletions are added in. </p>
+<p>-Jan-March: Compare inflow volume between current t and end of April to that which was forecasted for the same period. If inflow volume between current t - April is greater/less than forecasted for the period scale A-J Volume for the current year up/down accordindly. This allows adjustments in baseflow operations to be made in order to meet March or May 1 UDLE. <br>
+-Other Months: calculated April - July flows are used. </p>
+<p>Returns: The unregulated inflow volume used to set springflow operations (FlamingGorgeData.AprJulVolSpringFlow)<br>
+</p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  None</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.7.Body.png#a3d200d3-e3bb-4812-8301-bbe3933d7cd7" width="542" height="498" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> FGTransbasinDepletions</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> CalcUnregulatedInflowVolume</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumSlot</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.8_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.8"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.8_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.8_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.8_DisplayToggle')"></img>1.2.9 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> BaseFlowA-JVolumeUpdate</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.8_Content" style="display:block;">
+<p><p>Arguements: None</p>
+<p>Description: Calculates the April - July unregulated inflow volume (A-J Volume) to Flaming Gorge from the previous season. This volume is used for determining baseflow operations. Transbasin depletions are added in. </p>
+<p>-Jan-March: Compare inflow volume between current t and end of April to that which was forecasted for the same period. If inflow volume between current t - April is greater/less than forecasted for the period scale A-J Volume for the current year up/down accordindly. This allows adjustments in baseflow operations to be made in order to meet March or May 1 UDLE. <br>
+- August: obeserved April - July flows are used. <br>
+- September - December: Compare calculated inflow volume in the previous month (t-1) to the forecast inflows for that month. If the calculated inflow volume in for t-1 were greater/less than the forecasted inflows in t-1 then scale A-J Volume for next year up/down accordindly. This allows adjustments in baseflow operations to be made in order to meet March 1 UDLE. <br>
+-Other Months: observed April - July flows are used. </p>
+<p>e.g. If its October and in Septmeber you observed a greater unregulated inflow than was forecast scale the forecast A-J volume for next year up propotionally.  </p>
+<p>Returns: The unregulated inflow volume used to calculate baseflow (FlamingGorgeData.AprJulVolBaseFlow)</p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  None</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.8.Body.png#09e94e17-f195-412c-923b-cc2049f8d799" width="542" height="1162" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> FGTransbasinDepletions</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> CalcUnregulatedInflowVolume</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Max</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumSlot</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.9_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.9"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.9_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.9_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.9_DisplayToggle')"></img>1.2.10 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitude</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.9_Content" style="display:block;">
+<p><p>Arguements: None</p>
+<p>Description: Returns the steady base flow magnitude nocessary to meet the May1 ULDE. The magnitude is first projected as if there are no base flow limits by GetFGBaseFlowMagnitudeUnconstrained, if the necessary base flow is outside of the limits in BaseFlowMagnitudeLimits, then the returned flow is within the limits set by the current hydrologic classification. </p>
+<p>Returns: Baseflow in cfs</p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  None</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.9.Body.png#3d233aad-204b-466c-b208-0c48cfcdf70e" width="525" height="310" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitudeUnconstrained</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.10_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.10"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.10_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.10_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.10_DisplayToggle')"></img>1.2.11 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitudeUnconstrained</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.10_Content" style="display:block;">
+<p><p>Arguements: None</p>
+<p>Description: Calcualtes the exact steady baseflow from the current timestep to the next April to meet the May 1 ULDE regardless of base flow restrictions. New provisions ensure FG baseflow will be sufficent to meet the lower baseflow limit set for the Green at Jensen by the EIS during baseflow operation months. </p>
+<p>- Jan-Feb: Use current inflow forecast to calculate the baseflow needed to achieve the March 1 drawdown level of 6027ft from the EIS. <br>
+- March-April: Operate during the transition period to achieve the Target May 1 UDLE (based on precent exceedence/current hydrologic year classification).<br>
+- May-Dec: Use predicted inflow between t and next April to calculate the baseflow needed to achieve the March 1 drawdown level of 6027ft from the EIS. </p>
+<p>Returns: The unconstrained baseflow in cfs.<br>
+</p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  None</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.10.Body.png#dd15ba67-0b26-4c47-9fe8-007473d33f3e" width="620" height="1364" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetMay1TargetElevation</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> PredictedFGInflow</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> PredictedYampaFlow</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> TargetHWGivenInflowforOneMonth</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MonthIs</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Max</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> TargetHWGivenInflow</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> VolumeToFlow</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.11_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.11"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.11_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.11_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.11_DisplayToggle')"></img>1.2.12 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> DaysToDownramp</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.11_Content" style="display:block;">
+<p><p>Arguements: None</p>
+<p>Description: Calcualtes the number of days required to downramp from powerplant capacity to baseflow. Baseflow is set by the current hydrologic classification. Add units of cfs/day to RampUpRateNoUnits since Riverware cannot do FlowPerTime. In extreme wet years, days might be negative if pool elevation is slightly above the target so set value to zero. </p>
+<p>Returns: Number of days to ramp down </p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  None</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.11.Body.png#3a251027-c733-4307-a79b-db189b91979d" width="614" height="74" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitude</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.12_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.12"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.12_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.12_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.12_DisplayToggle')"></img>1.2.13 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> DaysToRampUp</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.12_Content" style="display:block;">
+<p><p>Arguements: FlamingGorge.Outflow at previous timestep</p>
+<p>Description: Calculate the number of days to ramp up from base flow to power plant capacity. Add units of cfs/day to RampUpRateNoUnits since Riverware cannot do FlowPerTime. In extreme wet years, days might be negative if pool elevation is slightly above the target so set value to zero. </p>
+<p>Returns: Number of days to ramp up from base flow to power plant capacity.</p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>NUMERIC  Flow</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.12.Body.png#b7bd85b6-0acc-4d83-9cab-64650f386589" width="472" height="125" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Max</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.13_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.13"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.13_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.13_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.13_DisplayToggle')"></img>1.2.14 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtPPC</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.13_Content" style="display:block;">
+<p><p>Arguements: The current SpringHClass (nummeric)</p>
+<p>Description: Ensure that the days at Power Plant Capacity interpolated by GetNumberOfDaysAtPPCUnconstrained falls within the bounds of the current hydrologic classification. If GetNumberOfDaysAtPPCUnconstrained falls outside this range return the upper or lower limit for the given year type found in DaysAtPowerPlantCapacity.</p>
+<p>Returns: Days at Power Plant Capacity </p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>NUMERIC  Class</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.13.Body.png#8b32f44d-f13b-4be1-9019-600150ef6cca" width="620" height="191" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtPPCUnconstrained</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.14_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.14"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.14_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.14_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.14_DisplayToggle')"></img>1.2.15 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtPPCUnconstrained</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.14_Content" style="display:block;">
+<p><p>Arguements: The current SpringHClass (nummeric)</p>
+<p>Description: The number of days is determined by interpolation based on the particular years exceedance percentage from the Yampa River. ie: an average year with exactly a 50% exceedance percentage would result in 21 days at power plant capacity. </p>
+<p>Returns: A unconstrained value of days at Power Plant Capacity. </p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>NUMERIC  Class</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.14.Body.png#362d26bb-12be-4903-a9be-f703b0adc548" width="386" height="157" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Interpolate</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.15_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.15"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.15_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.15_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.15_DisplayToggle')"></img>1.2.16 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetMay1TargetElevation</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.15_Content" style="display:block;">
+<p><p>Arguements:  None</p>
+<p>Description: Finds the May 1 upper limit draw-down elevation (ULDE) from the EIS by checking where the calculated inflow forecast precent exceedance falls within the ranges in the  May1TargetElevation table</p>
+<p>Returns: The Upper Limit Drawdown Elevation target in ft for a give inflow exceedance.<br>
+</p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  None</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.15.Body.png#bf2728c2-d454-4e7a-932f-dbd7cd9af597" width="772" height="191" border="1" alt="Body"/></p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.16_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.16"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.16_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.16_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.16_DisplayToggle')"></img>1.2.17 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> AveRampUpFlow</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.16_Content" style="display:block;">
+<p><p>Arguements:  None</p>
+<p>Description: Computes the average flow over the ramp up period.  Must convert number of days to dimensionless to get the units to work out.  </p>
+<p>Returns: Flow in cfs</p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  None</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.16.Body.png#4f597758-e4cd-41d9-a7c1-70627bd6c19f" width="443" height="125" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> DaysToRampUp</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.17_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.17"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.17_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.17_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.17_DisplayToggle')"></img>1.2.18 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> AveRampDownFlow</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.17_Content" style="display:block;">
+<p><p>Arguements: None</p>
+<p>Description: Computes the average flow over the ramp down period. </p>
+<p>Returns: Flow in cfs</p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  None</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.17.Body.png#bd26b4e6-6a85-431b-b678-ad55f10af508" width="545" height="57" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetFGBaseFlowMagnitude</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> DaysToDownramp</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.18_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.18"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.18_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.18_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.18_DisplayToggle')"></img>1.2.19 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetDaysAtBypass</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.18_Content" style="display:block;">
+<p><p>Arguments: None</p>
+<p>Description: The function determines the number of days Flaming Gorge will bypass based on hydrologic class. </p>
+<p>-In wet years Flaming Gorge will always bypass.  <br>
+-In dry years Flaming Gorge will never bypass.  <br>
+-In the other three year types, Flaming Gorge will bypass if conditions on the Yampa River warrant bypassing water to try and meet the wetter targets at Jensen (18600 cfs).   <br>
+ <br>
+Yampa must be above 10000 (calculated by DaysAboveThreshold) for a length of time greater than or equal to the values in YampaDaysAbove10000ForBypass for Flaming Gorge to bypass water. If this is the case then GetNumberOfDaysAtBypass is used to determine the number of days at bypass. This is a function of both the year type on the Yampa and the year type on the Green/at Flaming Gorge as determined by the Compute Percent Exceedance rule.  </p>
+<p>In previous versions of CRSS, Flaming Gorge would only bypass when the Yampa was flowing at 14000 cfs for enough days to meet the 22600 flow target at Jensen. The 22600 cfs flow target has a shorter duration than the 18600 cfs target, therefore under certain hydrologies this updated version will function differently than previous versions of CRSS. </p>
+<p>Returns: the number of days Flaming Gorge will bypass.</p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>NUMERIC  Class</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.18.Body.png#fb80f64a-337f-49eb-b83b-0f4d0757a8bf" width="608" height="889" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> EstimateEvaporation</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtBypass</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> DaysAboveThreshold</li>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RoundToNearestDay</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Max</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumFlowsToVolume</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetMaxOutflowGivenHW</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> ElevationToStorage</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetSlotVals</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.19_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.19"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.19_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.19_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.19_DisplayToggle')"></img>1.2.20 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> PredictedFGInflow</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.19_Content" style="display:block;">
+<p><p>Arguements: Beginning time and end time for predicition.</p>
+<p>Description: Calculates the inflow at Flaming Gorge based on actual flows and forecasted flows for a given time period </p>
+<p>Returns: The inflow volumne to Flaming Gorge over the time period. </p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>DATETIME  startDate</li>
+<li>DATETIME  endDate</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.19.Body.png#07d2de6e-6227-492d-8394-afc050314a5a" width="638" height="327" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumFlowsToVolume</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.20_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.20"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.20_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.20_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.20_DisplayToggle')"></img>1.2.21 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> PredictedYampaFlow</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.20_Content" style="display:block;">
+<p><p>Arguements: Beginning time and end time for calculation.</p>
+<p>Description: Calculates the Yampa flow based on actual flows and forecasted flows for a given time period </p>
+<p>Returns: The Yampa flow over the time period. <br>
+</p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>DATETIME  startDate</li>
+<li>DATETIME  endDate</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.20.Body.png#c384768e-7c6b-4bab-907d-23197e447c18" width="624" height="327" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> SumFlowsToVolume</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.21_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.21"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.21_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.21_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.21_DisplayToggle')"></img>1.2.22 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> ForecastComputeDemandsBelow</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.21_Content" style="display:block;">
+<p><p>Arguements: Reservior, time to compute at</p>
+<p>Description: Function calculates the NetSubBasinDiversionRequirement for a given resevior.</p>
+<p>Returns: The sum of the diversions in the subbasin.</p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>OBJECT  reservoir</li>
+<li>DATETIME  month</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.21.Body.png#a0c502e1-e243-4389-884c-da404a96b553" width="573" height="344" border="1" alt="Body"/></p>
+<p class="ItemLabel">Constraints</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.21.Constraints.png#a6d31e3d-2e17-4def-bc9a-4829ac183507" width="229" height="21" border="1" alt="Constraints"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> MaxRelease</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Max</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> ListSubbasin</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetDate</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetMonthAsString</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetYear</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> RunEndDate</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> NetSubBasinDiversionRequirement</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Split</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.22_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.22"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.22_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.22_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.22_DisplayToggle')"></img>1.2.23 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> TargetHWGivenInflowforOneMonth</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.22_Content" style="display:block;">
+<p><p>Arguements: Target pool elevation for end of month</p>
+<p>Description: This function computes the outflow required to meet target pool elevation for end of month for FG. It's different from TargetHWGivenInflow since it estimates the evaporation.</p>
+<p>Returns: Outflow in cfs</p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>NUMERIC  Elevation</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.22.Body.png#eeef2fe5-8bf9-4176-98bd-5b6ca3fa755b" width="454" height="209" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> EstimateEvaporation</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> ElevationToStorage</li>
+<li><img src="RiverWareReportImages/RplFunctionPredef6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> FlowToVolume</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.23_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.23"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.23_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.23_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.23_DisplayToggle')"></img>1.2.24 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> CountSustainedDaysAboveThreshold</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.23_Content" style="display:block;">
+<p><p>Arguements: list of flows, minimum flow </p>
+<p>Description: Function calculates the number of days flows in list are above minimum flow</p>
+<p>Returns: Number of days </p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>LIST  flows</li>
+<li>NUMERIC  minflow</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.23.Body.png#bb6bba8c-442d-46d1-92dd-f4505589ab2c" width="412" height="225" border="1" alt="Body"/></p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.24_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.24"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.24_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.24_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.24_DisplayToggle')"></img>1.2.25 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtBypass</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.24_Content" style="display:block;">
+<p><p>Arguements: Current hydrologic year classification </p>
+<p>Description: Funciton ensures that the days at power plant capacity calculated by GetNumberOfDaysAtBypassUnconstrained fall within the limits of the current hydrolocic classification</p>
+<p>Returns: Number of days </p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>NUMERIC  Class</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.24.Body.png#9e5ee6b3-65dd-417e-a5dc-b1a37ebc1315" width="573" height="191" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtBypassUnconstrained</li>
+</ul>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.3.RplObj26.25_Section"><a id="RiverWare_Report_Item_0.3.3.RplObj26.25"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.3.RplObj26.25_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.3.RplObj26.25_Content', 'RiverWare_Report_Item_0.3.3.RplObj26.25_DisplayToggle')"></img>1.2.26 <img src="RiverWareReportImages/RplReportItem.RplFunction6.png" width="37" height="17" border="0" alt="RPL Object Icon"></img> GetNumberOfDaysAtBypassUnconstrained</h4>
+<div id="RiverWare_Report_Item_0.3.3.RplObj26.25_Content" style="display:block;">
+<p><p>Arguements: Current hydrologic year classification </p>
+<p>Description: Funciton interpolates to find the number of days at by pass capacity based on the spring flow percentage exceedence and the EIS mandated limits for the current hydrolocic classification</p>
+<p>Returns: Number of days </p></p>
+<p><b>Return Type:</b>  NUMERIC</p>
+<p><b>Arguments:</b>  <ul>
+<li>NUMERIC  Class</li>
+</ul>
+</p>
+<p class="ItemLabel">Body</p>
+<p><img src="RiverWareReportImages/RulesReport.RiverWare_Report_Item_0.3.3.RplObj26.25.Body.png#82b0150b-dee9-470c-ba26-1c1f018dcfa0" width="386" height="157" border="1" alt="Body"/></p>
+<p><p class="ItemLabel">Referenced Functions</p>
+<ul>
+<li><img src="RiverWareReportImages/RplFunction6.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Interpolate</li>
+</ul>
+</p>
+</div>
+</div>
+<h3 id="RiverWare_Report_Item_0.3.4.RplObj27_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27_Content', 'RiverWare_Report_Item_0.3.4.RplObj27_DisplayToggle')"></img>1.3 <img src="RiverWareReportImages/RplReportGroup0.png" width="17" height="17" border="0" alt="RPL Object Icon"></img> Flaming Gorge Data Slots Report Group</h3>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27_Content" style="display:block;">
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.0_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.0"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.0_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.0_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.0_DisplayToggle')"></img>1.3.1 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> AbsoluteMinRelease</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.0_Content" style="display:block;">
+<p>value = 400.00 cfs</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.1_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.1"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.1_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.1_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.1_DisplayToggle')"></img>1.3.2 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> BaseFlowDownrampRateNoUnits</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.1_Content" style="display:block;">
+<p><table>
+<thead style="vertical-align:bottom;"><tr><th></th><th>decimal</th></tr>
+</thead>
+<tbody><tr><th>Dry</th><td style="text-align:right;">350.00</td></tr>
+<tr><th>ModDry</th><td style="text-align:right;">350.00</td></tr>
+<tr><th>Ave</th><td style="text-align:right;">500.00</td></tr>
+<tr><th>ModWet</th><td style="text-align:right;">1,000.00</td></tr>
+<tr><th>Wet</th><td style="text-align:right;">1,000.00</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.2_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.2"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.2_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.2_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.2_DisplayToggle')"></img>1.3.3 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> BaseFlowMagnitudeLimits</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.2_Content" style="display:block;">
+<p><p>EIS limits on base flow under various hydrologic classifications</p></p>
+<p><table>
+<thead style="vertical-align:bottom;"><tr><th></th><th>Below FG Lower<br />cfs</th><th>Below FG Upper<br />cfs</th><th>Jensen Lower<br />cfs</th><th>Jensen Upper<br />cfs</th></tr>
+</thead>
+<tbody><tr><th style="text-align:right;">1</th><td style="text-align:right;">800.00</td><td style="text-align:right;">1,000.00</td><td style="text-align:right;">900.00</td><td style="text-align:right;">1,100.00</td></tr>
+<tr><th style="text-align:right;">2</th><td style="text-align:right;">800.00</td><td style="text-align:right;">1,300.00</td><td style="text-align:right;">1,100.00</td><td style="text-align:right;">1,500.00</td></tr>
+<tr><th style="text-align:right;">3</th><td style="text-align:right;">800.00</td><td style="text-align:right;">2,200.00</td><td style="text-align:right;">1,500.00</td><td style="text-align:right;">2,400.00</td></tr>
+<tr><th style="text-align:right;">4</th><td style="text-align:right;">1,500.00</td><td style="text-align:right;">2,600.00</td><td style="text-align:right;">2,400.00</td><td style="text-align:right;">2,800.00</td></tr>
+<tr><th style="text-align:right;">5</th><td style="text-align:right;">1,800.00</td><td style="text-align:right;">2,700.00</td><td style="text-align:right;">2,800.00</td><td style="text-align:right;">3,000.00</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.3_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.3"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.3_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.3_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.3_DisplayToggle')"></img>1.3.4 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> BypassCapacity</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.3_Content" style="display:block;">
+<p>value = 8,600.00 cfs</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.4_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.4"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.4_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.4_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.4_DisplayToggle')"></img>1.3.5 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> BypassThreshold</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.4_Content" style="display:block;">
+<p>value = 860.00 1000 acre-ft</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.5_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.5"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.5_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.5_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.5_DisplayToggle')"></img>1.3.6 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> DaysAtPowerPlantCapacity</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.5_Content" style="display:block;">
+<p><table>
+<thead style="vertical-align:bottom;"><tr><th></th><th>day</th><th>day</th></tr>
+</thead>
+<tbody><tr><th>Dry</th><td style="text-align:right;">0.00</td><td style="text-align:right;">7.00</td></tr>
+<tr><th>ModDry</th><td style="text-align:right;">7.00</td><td style="text-align:right;">14.00</td></tr>
+<tr><th>Ave</th><td style="text-align:right;">14.00</td><td style="text-align:right;">28.00</td></tr>
+<tr><th>ModWet</th><td style="text-align:right;">28.00</td><td style="text-align:right;">48.00</td></tr>
+<tr><th>Wet</th><td style="text-align:right;">48.00</td><td style="text-align:right;">80.00</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.6_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.6"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.6_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.6_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.6_DisplayToggle')"></img>1.3.7 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> HydrologicClassPercentileLimits</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.6_Content" style="display:block;">
+<p><table>
+<thead style="vertical-align:bottom;"><tr><th></th><th>decimal</th><th>decimal</th></tr>
+</thead>
+<tbody><tr><th>Dry</th><td style="text-align:right;">0.90</td><td style="text-align:right;">1.00</td></tr>
+<tr><th>ModDry</th><td style="text-align:right;">0.70</td><td style="text-align:right;">0.90</td></tr>
+<tr><th>Ave</th><td style="text-align:right;">0.30</td><td style="text-align:right;">0.70</td></tr>
+<tr><th>ModWet</th><td style="text-align:right;">0.10</td><td style="text-align:right;">0.30</td></tr>
+<tr><th>Wet</th><td style="text-align:right;">0.00</td><td style="text-align:right;">0.10</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.7_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.7"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.7_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.7_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.7_DisplayToggle')"></img>1.3.8 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> MaxDaysAtBypassCapacity</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.7_Content" style="display:block;">
+<p><table>
+<thead style="vertical-align:bottom;"><tr><th></th><th>Yampa Dry<br />day</th><th>Yampa ModDry<br />day</th><th>Yampa Avg<br />day</th><th>Yampa ModWet<br />day</th><th>Yampa Wet<br />day</th></tr>
+</thead>
+<tbody><tr><th>FG Dry</th><td style="text-align:right;">0.00</td><td style="text-align:right;">0.00</td><td style="text-align:right;">0.00</td><td style="text-align:right;">0.00</td><td style="text-align:right;">0.00</td></tr>
+<tr><th>FG ModDry</th><td style="text-align:right;">0.00</td><td style="text-align:right;">0.00</td><td style="text-align:right;">8.00</td><td style="text-align:right;">10.00</td><td style="text-align:right;">10.00</td></tr>
+<tr><th>FG Avg</th><td style="text-align:right;">0.00</td><td style="text-align:right;">7.00</td><td style="text-align:right;">10.00</td><td style="text-align:right;">12.00</td><td style="text-align:right;">12.00</td></tr>
+<tr><th>FG ModWet</th><td style="text-align:right;">0.00</td><td style="text-align:right;">7.00</td><td style="text-align:right;">12.00</td><td style="text-align:right;">14.00</td><td style="text-align:right;">21.00</td></tr>
+<tr><th>FG Wet</th><td style="text-align:right;">10.00</td><td style="text-align:right;">10.00</td><td style="text-align:right;">21.00</td><td style="text-align:right;">21.00</td><td style="text-align:right;">21.00</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.8_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.8"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.8_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.8_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.8_DisplayToggle')"></img>1.3.9 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> MaxPE</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.8_Content" style="display:block;">
+<p>value = 6,039.00 ft</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.9_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.9"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.9_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.9_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.9_DisplayToggle')"></img>1.3.10 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> May1TargetElevation</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.9_Content" style="display:block;">
+<p><table>
+<thead style="vertical-align:bottom;"><tr><th></th><th>Inflow Forecast % Exceedance Lower Limit<br />decimal</th><th>Inflow Forecast % Exceedance Upper Limit<br />decimal</th><th>Upper Limit Drawdown Elevation<br />ft</th></tr>
+</thead>
+<tbody><tr><th style="text-align:right;">1</th><td style="text-align:right;">0.00</td><td style="text-align:right;">10.00</td><td style="text-align:right;">6,023.00</td></tr>
+<tr><th style="text-align:right;">2</th><td style="text-align:right;">10.00</td><td style="text-align:right;">30.00</td><td style="text-align:right;">6,024.00</td></tr>
+<tr><th style="text-align:right;">3</th><td style="text-align:right;">30.00</td><td style="text-align:right;">40.00</td><td style="text-align:right;">6,025.00</td></tr>
+<tr><th style="text-align:right;">4</th><td style="text-align:right;">40.00</td><td style="text-align:right;">59.90</td><td style="text-align:right;">6,027.00</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.10_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.10"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.10_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.10_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.10_DisplayToggle')"></img>1.3.11 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> MinFlow</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.10_Content" style="display:block;">
+<p>value = 49,190.08 acre-ft/month</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.11_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.11"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.11_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.11_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.11_DisplayToggle')"></img>1.3.12 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> PowerPlantCapacity</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.11_Content" style="display:block;">
+<p>value = 4,600.00 cfs</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.12_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.12"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.12_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.12_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.12_DisplayToggle')"></img>1.3.13 <img src="RiverWareReportImages/RplReportItem.scalSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> RampUpRate</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.12_Content" style="display:block;">
+<p>value = 2,000.00 cfsday</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.13_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.13"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.13_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.13_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.13_DisplayToggle')"></img>1.3.14 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> SpringMinimumPeak</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.13_Content" style="display:block;">
+<p><table>
+<thead style="vertical-align:bottom;"><tr><th></th><th>Below FG<br />cfs</th><th>Jensen<br />cfs</th></tr>
+</thead>
+<tbody><tr><th>Dry</th><td style="text-align:right;">4,300.00</td><td style="text-align:right;">8,300.00</td></tr>
+<tr><th>ModDry</th><td style="text-align:right;">4,300.00</td><td style="text-align:right;">8,300.00</td></tr>
+<tr><th>Ave</th><td style="text-align:right;">4,300.00</td><td style="text-align:right;">8,300.00</td></tr>
+<tr><th>ModWet</th><td style="text-align:right;">8,600.00</td><td style="text-align:right;">18,600.00</td></tr>
+<tr><th>Wet</th><td style="text-align:right;">8,600.00</td><td style="text-align:right;">18,600.00</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.14_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.14"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.14_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.14_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.14_DisplayToggle')"></img>1.3.15 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> YampaDaysAbove10000ForBypass</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.14_Content" style="display:block;">
+<p><table>
+<thead style="vertical-align:bottom;"><tr><th></th><th>hr</th></tr>
+</thead>
+<tbody><tr><th style="text-align:right;">1</th><td style="text-align:right;">NaN</td></tr>
+<tr><th style="text-align:right;">2</th><td style="text-align:right;">360.00</td></tr>
+<tr><th style="text-align:right;">3</th><td style="text-align:right;">360.00</td></tr>
+<tr><th style="text-align:right;">4</th><td style="text-align:right;">360.00</td></tr>
+<tr><th style="text-align:right;">5</th><td style="text-align:right;">360.00</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+<h4 id="RiverWare_Report_Item_0.3.4.RplObj27.15_Section"><a id="RiverWare_Report_Item_0.3.4.RplObj27.15"></a><img class="DisplayControl" id="RiverWare_Report_Item_0.3.4.RplObj27.15_DisplayToggle" src="RiverWareReportImages/TriangleDown.png" width="15" height="15" border="0" alt="Control Display Icon" onclick="javascript:toggleDisplay('RiverWare_Report_Item_0.3.4.RplObj27.15_Content', 'RiverWare_Report_Item_0.3.4.RplObj27.15_DisplayToggle')"></img>1.3.16 <img src="RiverWareReportImages/RplReportItem.tableSlot.png" width="36" height="17" border="0" alt="RPL Object Icon"></img> YampaDaysAbove14000ForPPC</h4>
+<div id="RiverWare_Report_Item_0.3.4.RplObj27.15_Content" style="display:block;">
+<p><table>
+<thead style="vertical-align:bottom;"><tr><th></th><th>hr</th></tr>
+</thead>
+<tbody><tr><th style="text-align:right;">1</th><td style="text-align:right;">NaN</td></tr>
+<tr><th style="text-align:right;">2</th><td style="text-align:right;">360.00</td></tr>
+<tr><th style="text-align:right;">3</th><td style="text-align:right;">360.00</td></tr>
+<tr><th style="text-align:right;">4</th><td style="text-align:right;">360.00</td></tr>
+<tr><th style="text-align:right;">5</th><td style="text-align:right;">NaN</td></tr>
+</tbody>
+</table>
+</p>
+</div>
+</div>
+</div>
